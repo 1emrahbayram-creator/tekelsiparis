@@ -74,32 +74,32 @@ BOLGELER = [
 
 # ─────────────────────────────── ÜRÜN KATEGORİLERİ ───────────────────────────────
 KATEGORILER = [
- ("Buz","🧊","Torba buz her saat, derin dondurucudan termal çantaya. Kartal'da gece buz arayanların ilk adresi.",["Torba buz (küp)","Buz kalıbı","Kırık buz"]),
- ("Soda, Tonik & Mikserler","🍋","Tonik, soda, gazoz, kola, limon, nane, zencefil. Masanın eksiği kalmasın.",["Tonik","Soda & sade soda","Kola / gazoz","Limonata","Limon & nane","Enerji içeceği","Meyve suyu"]),
- ("Meze & Çerez","🥜","Leblebi, fıstık, çekirdek, cips, kraker, zeytin, peynir, turşu. Sofraya bir tur daha.",["Kuruyemiş & leblebi","Çekirdek","Cips çeşitleri","Kraker & çubuk kraker","Beyaz peynir & zeytin","Turşu","Salatalık, domates, limon"]),
- ("Soğuk İçecekler","🥤","Su, ayran, soğuk kahve, buzlu çay. Hepsi dolaptan çıkar.",["Su (0,5L / 1,5L / 5L)","Ayran","Soğuk kahve","Buzlu çay","Maden suyu"]),
+ ("Buz","🧊","Torba buz her saat. Derin dondurucudan termal çantaya, erimeden kapınıza.",["Torba buz (küp)","Buz kalıbı","Kırık buz"]),
+ ("İçecekler & Meşrubatlar","🥤","Dolaplarımız soğuk meşrubat çeşitleriyle dolu: kola, gazoz, soda, tonik, meyve suyu, enerji içeceği.",["Kola / gazoz","Soda & sade soda","Tonik","Limonata","Meyve suyu","Enerji içeceği","Soğuk kahve & buzlu çay"]),
+ ("Soğuk Meze Çeşitleri","🫒","Sofranın vazgeçilmezi soğuk mezeler. Bir telefon yeterli.",["Beyaz peynir & zeytin","Turşu","Salatalık, domates, limon","Nane, roka, maydanoz","Humus & cacık (günlük)"]),
+ ("Kuruyemiş & Çerez","🥜","Canınız gece kuruyemiş çekerse bizi arayın: leblebi, fıstık, çekirdek, cips, kraker.",["Kuruyemiş & leblebi","Çekirdek","Cips çeşitleri","Kraker & çubuk kraker","Patlamış mısır"]),
+ ("Su & Süt Ürünleri","🥛","Su, ayran, süt, yoğurt, peynir. Günlük ve soğuk.",["Su (0,5L / 1,5L / 5L)","Ayran","Süt & yoğurt","Peynir çeşitleri","Yumurta"]),
  ("Çikolata & Tatlı","🍫","Tablet çikolata, gofret, sakız, şeker, dondurma.",["Tablet çikolata","Gofret","Sakız & şeker","Algida dondurma"]),
- ("Çakmak, Kibrit, Pil & Küçük Eşya","🔌","Çakmak, kibrit, pil, şarj kablosu, ampul, çöp poşeti, bardak.",["Çakmak & kibrit","Pil (AA/AAA)","Şarj kablosu","Çöp poşeti","Peçete, bardak, tabak"]),
- ("Kahvaltılık & Temel Gıda","🥚","Ekmek, süt, yumurta, peynir, çay, şeker, makarna. Sabah için de buradayız.",["Ekmek","Süt & yoğurt","Yumurta","Çay & kahve","Makarna, pirinç","Tuz, şeker, yağ"]),
- ("Kişisel Bakım & Temizlik","🧴","Gece yarısı biten şampuan, diş macunu, deterjan, tuvalet kağıdı.",["Şampuan, sabun","Diş macunu & fırçası","Tıraş ürünleri","Deterjan","Tuvalet kağıdı"]),
+ ("Çakmak, Pil & Küçük Eşya","🔌","Çakmak, kibrit, pil, şarj kablosu, çöp poşeti, bardak.",["Çakmak & kibrit","Pil (AA/AAA)","Şarj kablosu","Çöp poşeti","Peçete, bardak, tabak"]),
+ ("Temel Gıda & Kahvaltılık","🥚","Ekmek, çay, şeker, makarna, pirinç, yağ. Sabah için de buradayız.",["Ekmek","Çay & kahve","Makarna, pirinç","Tuz, şeker, yağ","Konserve"]),
+ ("Temizlik & Kişisel Bakım","🧴","Gece yarısı biten şampuan, diş macunu, deterjan, tuvalet kağıdı.",["Şampuan, sabun","Diş macunu & fırçası","Tıraş ürünleri","Deterjan","Tuvalet kağıdı"]),
  ("Bebek & Evcil Hayvan","🍼","Bebek bezi, ıslak mendil, mama. Acil ihtiyaçta bizi arayın.",["Bebek bezi","Islak mendil","Kedi & köpek maması"]),
 ]
 
 # ─────────────────────────────── SSS ───────────────────────────────
 SSS = [
- ("Alkollü içecek veya sigara sipariş edebilir miyim?", "Hayır. 4250 ve 4207 sayılı kanunlar gereği alkollü içki ve tütün ürünleri telefon, WhatsApp ya da internetten sipariş edilemez, eve gönderilemez. Bu ürünler yalnızca dükkânımızda, 18 yaş üstüne kimlik kontrolüyle satılır. Buz, tonik, soda, meze, çerez ve diğer her şeyi kapınıza getiriyoruz."),
- ("Kartal'da tekel siparişi nasıl veririm?", f"Üç yol var: <strong>{C['phone_display']}</strong> numarasını arayın, aynı numaraya WhatsApp'tan yazın ya da bu sitedeki sipariş sayfasından ürünleri seçip tek dokunuşla WhatsApp mesajı oluşturun. Adres ve ürünleri alır, hazırlar, yola çıkarırız."),
- ("Teslimat ne kadar sürer?", f"Karlıktepe ve komşu mahallelerde ortalama {C['eta']}. Cevizli, Yakacık ve Dragos gibi uzak noktalarda 40 dakikaya kadar çıkabilir. Yoğun saatlerde sipariş alırken tahmini süreyi söyleriz."),
- ("Eve teslimatta fiyat farkı var mı?", "Hayır. Teslimatta da dükkândaki raf fiyatı geçerlidir. &ldquo;Gel-al fiyatına eve teslim&rdquo; sözümüzün anlamı tam olarak budur. Varsa teslimat ücreti sipariş sırasında açıkça söylenir."),
- ("Saat kaça kadar açıksınız?", f"Her gün {C['opens']}&ndash;{C['closes']} arası açığız. Gece 02:00'ye kadar sipariş alırız; bayram ve özel günlerde saat değişirse Google İşletme Profilimizde ve bu sitede duyururuz."),
- ("Hangi bölgelere teslimat yapıyorsunuz?", "Kartal'ın tüm mahallelerine (yaş sınırlı ürünler hariç): Karlıktepe, Yukarı, Orta, Kordonboyu, Cumhuriyet, Hürriyet, Petrol-İş, Esentepe, Çavuşoğlu, Yalı, Yunus, Atalar, Topselvi, Gümüşpınar, Uğur Mumcu, Soğanlık, Cevizli, Orhantepe, Yakacık. Ayrıca Maltepe'nin Cevizli sınırı ve Pendik Kaynarca'ya da gidiyoruz."),
- ("Minimum sipariş tutarı var mı?", "Küçük siparişleri de alıyoruz. Bölgeye göre minimum tutar değişebilir; WhatsApp'tan adresinizi yazın, anında söyleyelim."),
- ("Ödeme nasıl yapılıyor?", "Kapıda nakit veya kredi/banka kartıyla ödeyebilirsiniz. Kurye yanında POS cihazı taşır."),
- ("Listede olmayan bir ürün istesem?", "Sorun. Dükkânda yoksa ve bulabiliyorsak sizin için temin ederiz (yaş sınırlı ürünler hariç). Müşterilerimizin Google yorumlarında en çok övdüğü şey bu."),
+ ("Kartal'da tekel siparişi nasıl verilir?", f"<strong>{C['phone_display']}</strong> numarasını arayın ya da aynı numaraya WhatsApp'tan yazın. Adresinizi ve istediklerinizi söyleyin; hazırlayıp yola çıkaralım. İsterseniz <a href='/siparis.html'>sipariş sayfasından</a> ürünleri seçip tek dokunuşla WhatsApp mesajı oluşturun."),
+ ("Eve servis ne kadar sürer?", f"Karlıktepe ve komşu mahallelerde ortalama {C['eta']}. Cevizli, Yakacık ve Dragos gibi uzak noktalarda 45 dakikaya kadar çıkabilir. Sipariş alırken tahmini süreyi söyleriz."),
+ ("Eve serviste fiyat farkı var mı?", "Yok. Kapınıza gelen ürünün fiyatı dükkândaki fiyatla aynıdır. Varsa teslimat ücreti sipariş sırasında söylenir."),
+ ("Çalışma saatleriniz nedir?", f"Her gün {C['opens']}&ndash;{C['closes']}. Gece 02:00'ye kadar sipariş alıyoruz."),
+ ("Hangi bölgelere eve servis var?", "Kartal'ın tüm mahallelerine: Karlıktepe, Yukarı, Orta, Kordonboyu, Cumhuriyet, Hürriyet, Petrol-İş, Esentepe, Çavuşoğlu, Yalı, Yunus, Atalar, Topselvi, Gümüşpınar, Uğur Mumcu, Soğanlık, Cevizli, Orhantepe, Yakacık. Maltepe'nin Cevizli tarafına ve Pendik Kaynarca'ya da gidiyoruz."),
+ ("Minimum sipariş tutarı var mı?", "Küçük siparişleri de alıyoruz. Bölgeye göre minimum tutar değişebilir; WhatsApp'tan adresinizi yazın, hemen söyleyelim."),
+ ("Ödeme nasıl yapılıyor?", "Kapıda kart ya da nakit. Kurye POS cihazı taşır."),
+ ("Listede olmayan bir ürün istesem?", "Sorun. Varsa getiririz, yoksa bulup getiririz. Müşterilerimizin Google yorumlarında en çok övdüğü şey bu."),
  ("Siparişimi nasıl takip ederim?", "Kurye yola çıkınca WhatsApp'tan haber veririz. Kapıya yaklaştığında sizi arar."),
- ("Buz ve soğuk içecek gerçekten soğuk mu geliyor?", "Evet. İçecekler dolaptan, buz derin dondurucudan çıkar ve termal çantayla taşınır."),
- ("Gece 00:00'dan sonra da açık mısınız?", "Evet, 02:00'ye kadar hem dükkân açık hem teslimat devam ediyor. Kartal'da gece açık tekel arayanların çoğu bize ulaşır; buz ve mikser siparişleri 02:00'ye kadar kapıda."),
- ("Toplu buz ve mikser siparişi veriyor musunuz?", "Evet. Ev partisi, site etkinliği ve ofisler için toplu buz, tonik, soda ve çerez siparişi alıyoruz. Bir gün önceden haber verirseniz stok hazırlarız."),
+ ("Buz ve içecekler soğuk mu gelir?", "Evet. İçecekler dolaptan, buz derin dondurucudan çıkar ve termal çantayla taşınır."),
+ ("Gece 00:00'dan sonra da açık mısınız?", "Evet. 02:00'ye kadar dükkân açık, eve servis devam ediyor. Kartal'da gece açık tekel arayanların adresi biziz."),
+ ("Toplu sipariş veriyor musunuz?", "Evet. Ev partisi, site etkinliği ve ofisler için toplu buz, meşrubat, meze ve kuruyemiş siparişi alıyoruz. Bir gün önceden haber verirseniz stok hazırlarız."),
 ]
 
 # ─────────────────────────────── BLOG ───────────────────────────────
@@ -107,7 +107,7 @@ BLOG = [
  {
   "slug":"kartal-gece-acik-tekel",
   "title":"Kartal'da Gece Açık Tekel: 02:00'ye Kadar Açığız",
-  "desc":"Kartal'da gece açık tekel mi arıyorsunuz? Marin her gün 02:00'ye kadar açık; buz, tonik, soda ve meze eve geliyor. Yaş sınırlı ürünler dükkânda, kimlikle.",
+  "desc":"Kartal'da gece açık tekel mi arıyorsunuz? Marin Tekel 2 her gün 02:00'ye kadar açık ve eve servis yapıyor. Gece siparişi nasıl verilir, ne kadar sürer.",
   "date":"2026-10-10",
   "body":"""
 <p>Saat gece 00:30. Misafir var, buz bitti, tonik yok. Kartal'da bu saatte açık tekel bulmak sandığınızdan zor: çoğu dükkân 23:00'te, geç kalanı 00:00'da kepenk indirir.</p>
@@ -122,23 +122,22 @@ BLOG = [
 <h2>Gece hangi bölgelere gidiyoruz?</h2>
 <p>Gündüz hangi mahalleye gidiyorsak gece de aynı: Karlıktepe, Kordonboyu, Yukarı, Orta, Hürriyet, Cumhuriyet, Soğanlık, Cevizli, Yakacık ve diğer tüm Kartal mahalleleri. Gece trafiği olmadığı için teslimat çoğu zaman gündüzden bile hızlı, ortalama <strong>%(eta)s</strong>.</p>
 <h2>Gece en çok ne isteniyor?</h2>
-<p>Sırasıyla: torba buz, tonik ve soda, limon-nane, çerez ve cips, çikolata, çakmak. Hepsi stokta, hepsi raf fiyatına.</p>
-<h2>Alkollü içecek eve geliyor mu?</h2>
-<p>Hayır ve bunu açıkça yazıyoruz: 4250 sayılı Kanun alkollü içkilerin uzaktan satışını ve eve teslimini yasaklıyor. Bu ürünler yalnızca dükkânımızda, 18 yaş üstüne kimlik kontrolüyle satılır. Dükkân 02:00'ye kadar açık; masanın geri kalanını biz kapınıza getiriyoruz.</p>
+<p>Sırasıyla: torba buz, soğuk meşrubat, soğuk meze, kuruyemiş ve cips, çikolata, çakmak. Hepsi stokta, fiyat farkı yok.</p>
+
 <h2>Gece teslimatta fiyat farkı var mı?</h2>
 <p>Yok. Gündüz ne ödüyorsanız gece de onu ödersiniz. <a href="/blog/gel-al-fiyatina-eve-teslim.html">Gel-al fiyatı sözümüzü</a> gece de tutuyoruz.</p>
 """},
  {
   "slug":"kartal-tekel-siparisi-nasil-verilir",
   "title":"Kartal'da Tekelden Eve Sipariş Nasıl Verilir? Kısa Rehber",
-  "desc":"Kartal'da WhatsApp veya telefonla tekelden buz, mikser ve meze siparişi vermenin en hızlı yolu. Adres ipuçları, hangi ürünler gelir, ödeme ve süreler.",
+  "desc":"Kartal'da WhatsApp veya telefonla tekelden eve sipariş vermenin en hızlı yolu. Adres ipuçları, sipariş takibi, ödeme ve teslimat süreleri.",
   "date":"2026-10-05",
   "body":"""
-<p>Uygulama indirmek, üye olmak, sepet doldurup minimum tutara takılmak... Mahalle tekelinden sipariş vermek bunların hiçbirini gerektirmez. İşte Kartal'da Marin'den buz, mikser ve meze siparişi vermenin en kısa yolu. (Alkollü içki ve tütün ürünleri mevzuat gereği sipariş akışında yoktur; yalnızca dükkânda, kimlikle.)</p>
+<p>Uygulama indirmek, üye olmak, sepet doldurup minimum tutara takılmak... Mahalle tekelinden sipariş vermek bunların hiçbirini gerektirmez. İşte Kartal'da Marin'den eve sipariş vermenin en kısa yolu.</p>
 <h2>1. Adresinizi tek seferde doğru yazın</h2>
 <p>Kuryenin en çok zaman kaybettiği şey eksik adrestir. Şu kalıp hiç şaşmaz: <em>Mahalle, cadde/sokak, bina adı veya no, daire, varsa site adı ve blok, kapı zili/isim.</em> Örnek: "Kordonboyu Mah. Ankara Cad. No:12 Deniz Apt. D:5, zil: Yılmaz".</p>
 <h2>2. Ürünleri yazın ya da siteden seçin</h2>
-<p>"2 torba buz, 4 tonik, 2 soda, 1 limon, 1 kuruyemiş" gibi kısa yazmanız yeter. Markayı belirtmezseniz en çok tercih edileni göndeririz. <a href="/siparis.html">Sipariş sayfasında</a> ürünleri işaretleyip tek dokunuşla hazır WhatsApp mesajı da oluşturabilirsiniz.</p>
+<p>"2 torba buz, 4 soda, 2 kola, 1 limon, 1 kuruyemiş" gibi kısa yazmanız yeter. Markayı belirtmezseniz en çok tercih edileni göndeririz. <a href="/siparis.html">Sipariş sayfasında</a> ürünleri işaretleyip tek dokunuşla hazır WhatsApp mesajı da oluşturabilirsiniz.</p>
 <h2>3. Onay ve süre</h2>
 <p>Mesajınızı aldığımızda stok ve tahmini süreyi yazarız. Karlıktepe ve çevresi için ortalama %(eta)s.</p>
 <h2>4. Ödeme</h2>
@@ -179,7 +178,7 @@ BLOG = [
   "desc":"Karlıktepe'den yola çıkan kuryemiz Kartal'ın 20 mahallesine kaç dakikada ulaşıyor? Mahalle mahalle tahmini teslimat süreleri ve rotalar.",
   "date":"2026-09-20",
   "body":"""
-<p>Kartal, sahilden Aydos Ormanı'na kadar uzanan geniş bir ilçe. Karlıktepe'deki tekelimiz tam ortada olduğu için buz ve mikser siparişlerinde çoğu mahalleye 30 dakikanın altında ulaşıyoruz. Aşağıdaki süreler akşam trafiği dahil gerçekçi ortalamalardır.</p>
+<p>Kartal, sahilden Aydos Ormanı'na kadar uzanan geniş bir ilçe. Karlıktepe'deki tekel bayimiz tam ortada olduğu için eve serviste çoğu mahalleye 30 dakikanın altında ulaşıyoruz. Aşağıdaki süreler akşam trafiği dahil gerçekçi ortalamalardır.</p>
 %(tablo)s
 <h2>Süreyi ne etkiler?</h2>
 <ul>
@@ -498,7 +497,7 @@ I_WA = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d=
 I_TEL = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>'
 
 # ─────────────────────────────── ŞABLON ───────────────────────────────
-NAV = [("/","Ana Sayfa"),("/kartal-tekel.html","Kartal Tekel"),("/siparis.html","Sipariş Ver"),("/urunler.html","Ürünler"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri"),("/sss.html","SSS"),("/blog/","Blog"),("/hakkimizda.html","Hakkımızda"),("/iletisim.html","İletişim")]
+NAV = [("/","Ana Sayfa"),("/kartal-tekel.html","Kartal Tekel Bayi"),("/siparis.html","Sipariş Ver"),("/urunler.html","Ürünler"),("/teslimat-bolgeleri.html","Eve Servis Bölgeleri"),("/sss.html","S.S.S"),("/blog/","Blog"),("/hakkimizda.html","Hakkımızda"),("/iletisim.html","İletişim")]
 
 def local_business(extra=None):
     d = {
@@ -508,7 +507,7 @@ def local_business(extra=None):
       "name": C["brand"],
       "alternateName":["Marin Tekel","Marin Tekel Kartal","Kartal Marin Tekel 2","Karlıktepe Tekel","Kartal Tekel","Kartal Tekel Bayii","Kartal Gece Açık Tekel"],
       "keywords":"kartal tekel, kartal tekel bayii, karlıktepe tekel, kartal gece açık tekel, kartal en yakın tekel, kartal sahil tekel, kartal merkez tekel, kartal tekel telefon, tekel siparişi kartal, buz siparişi kartal",
-      "description": f"{C['brand']}, Kartal Karlıktepe'de her gün {C['opens']}–{C['closes']} açık tekel bayii. Buz, soğuk içecek, soda-tonik, meze ve atıştırmalığı Kartal'ın tüm mahallelerine gel-al fiyatına, ortalama {C['eta']} içinde teslim eder. Yaş sınırlı ürünler yalnızca dükkânda, kimlik kontrolüyle satılır.",
+      "description": f"{C['brand']}, Kartal Karlıktepe'de her gün {C['opens']}–{C['closes']} açık tekel bayi ve market. Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünlerini Kartal'ın tüm mahallelerine eve servis eder. Fiyat farkı yok, ortalama {C['eta']}.",
       "url": C["domain"]+"/",
       "telephone": C["phone_e164"],
       "image": C["domain"]+"/assets/og.png",
@@ -527,7 +526,7 @@ def local_business(extra=None):
       "potentialAction":[{"@type":"OrderAction","target":{"@type":"EntryPoint","urlTemplate":WA_DEFAULT,"actionPlatform":["http://schema.org/MobileWebPlatform","http://schema.org/DesktopWebPlatform"]},"deliveryMethod":"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet"},
                          {"@type":"CommunicateAction","target":{"@type":"EntryPoint","urlTemplate":"tel:"+C["phone_e164"]}}],
       "sameAs":[s for s in [C["maps_url"], C["instagram"]] if s],
-      "slogan":"Kartal'ın gece 02:00'ye kadar açık tekeli.",
+      "slogan":"Size en yakın tekel market. Eve servis, gel-al fiyatına.",
       "knowsLanguage":"tr",
     }
     if extra: d.update(extra)
@@ -558,7 +557,7 @@ def head(title, desc, path, schemas, og_type="website", noindex=False):
 <meta name="geo.region" content="TR-34"><meta name="geo.placename" content="Kartal, İstanbul"><meta name="geo.position" content="{C['lat']};{C['lng']}"><meta name="ICBM" content="{C['lat']}, {C['lng']}">
 <meta property="og:locale" content="tr_TR"><meta property="og:type" content="{og_type}"><meta property="og:site_name" content="{esc(C['brand'])} · tekelsiparis.com">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}">
-<meta property="og:image" content="{C['domain']}/assets/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(C['brand'])} – Kartal tekel, buz ve mikser kapında">
+<meta property="og:image" content="{C['domain']}/assets/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(C['brand'])} – Kartal tekel bayi, eve servis">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(desc)}"><meta name="twitter:image" content="{C['domain']}/assets/og.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/icon-180.png"><link rel="manifest" href="/manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -572,7 +571,7 @@ def head(title, desc, path, schemas, og_type="website", noindex=False):
 <a class="skip" href="#main">İçeriğe geç</a>
 <header class="top">
  <div class="wrap">
-  <a class="logo" href="/" title="Ana sayfa"><span class="mark">M</span><span>{esc(C['brand'])}<small>Kartal · Tekel · 02:00'ye kadar</small></span></a>
+  <a class="logo" href="/" title="Ana sayfa"><span class="mark">M</span><span>{esc(C['brand'])}<small>Kartal Tekel Bayi · Eve Servis</small></span></a>
   <nav class="main" aria-label="Ana menü"><ul>{''.join(f'<li><a href="{u}"{" aria-current=page" if (u==path or (u!="/" and path.startswith(u.replace(".html","")) and u.endswith("/"))) else ""}>{n}</a></li>' for u,n in NAV)}</ul></nav>
   <div class="cta">
    <span class="status" data-status><i></i><span data-status-text>{C['opens']}–{C['closes']}</span></span>
@@ -601,11 +600,11 @@ def foot():
     </address>
     <p style="margin-top:12px"><a href="{C['maps_url']}" rel="noopener" target="_blank">Google Haritalar'da aç ↗</a></p>
    </div>
-   <div><p class="h4">Site</p><ul>{''.join(f'<li><a href="{u}">{n}</a></li>' for u,n in NAV)}</ul></div>
-   <div><p class="h4">Teslimat Bölgeleri</p><ul>{areas}<li><a href="/teslimat-bolgeleri.html">Tüm bölgeler →</a></li></ul></div>
+   <div><p class="h4">Sayfalar</p><ul>{''.join(f'<li><a href="{u}">{n}</a></li>' for u,n in NAV)}</ul></div>
+   <div><p class="h4">Eve Servis Bölgeleri</p><ul>{areas}<li><a href="/teslimat-bolgeleri.html">Tüm bölgeler →</a></li></ul></div>
    <div><p class="h4">Blog</p><ul>{''.join(f'<li><a href="/blog/{p["slug"]}.html">{esc(p["title"][:48])}…</a></li>' for p in BLOG)}</ul></div>
   </div>
-  <div class="legal"><span>© {datetime.date.today().year} {esc(C['brand'])} · Kartal, İstanbul · tekelsiparis.com</span><span>18 yaş altına alkollü içki ve tütün satışı yapılmaz. Alkollü içki ve tütün ürünleri uzaktan satılmaz ve eve gönderilmez (4250 ve 4207 sayılı kanunlar). Teslimat süreleri tahminidir.</span></div>
+  <div class="legal"><span>© {datetime.date.today().year} {esc(C['brand'])} · Kartal, İstanbul · tekelsiparis.com</span><span>18 yaş altına alkollü içki ve tütün satışı yapılmaz. Teslimat süreleri tahminidir.</span></div>
  </div>
 </footer>
 <div class="mbar">
@@ -619,9 +618,9 @@ def page_head(h1, lead, crumbs):
     cr = '<div class="crumbs">' + ''.join((f'<a href="{u}">{n}</a><span>/</span>' if i<len(crumbs)-1 else f'<span style="margin:0;opacity:1">{n}</span>') for i,(u,n) in enumerate(crumbs)) + '</div>'
     return f'<div class="page-head"><div class="wrap">{cr}<h1>{h1}</h1><p>{lead}</p></div></div>'
 
-def cta_band(title="Şimdi sipariş ver, {eta} içinde kapında.", sub="Telefon ya da WhatsApp. Raf fiyatı, fiyat farkı yok."):
+def cta_band(title="Şimdi sipariş verin, {eta} içinde kapınızda.", sub="Telefon ya da WhatsApp. Fiyat farkı yok."):
     return f"""<section><div class="wrap"><div class="cta-band rv"><div><h2>{title.format(eta=C['eta'])}</h2><p>{sub}</p></div>
-<div class="actions"><a class="btn btn-wa" href="{WA_DEFAULT}" rel="noopener">{I_WA}WhatsApp'tan Sipariş</a><a class="btn btn-ghost" href="tel:{C['phone_e164']}">{I_TEL}{C['phone_display']}</a></div></div></div></section>"""
+<div class="actions"><a class="btn btn-wa" href="{WA_DEFAULT}" rel="noopener">{I_WA}WhatsApp Sipariş</a><a class="btn btn-ghost" href="tel:{C['phone_e164']}">{I_TEL}{C['phone_display']}</a></div></div></div></section>"""
 
 def faq_block(qs, title="Sık sorulanlar", lead=None):
     items = "".join(f'<details><summary>{q}</summary><div class="a"><p>{a}</p></div></details>' for q,a in qs)
@@ -634,13 +633,13 @@ def write(path, content):
 
 # ─────────────────────────────── ANA SAYFA ───────────────────────────────
 def build_index():
-    title = "Kartal Tekel | 02:00'ye Kadar Açık, Buz & Mikser Kapına | Marin"
-    desc = f"Kartal Karlıktepe'de her gün {C['opens']}–{C['closes']} açık tekel. Buz, tonik, soda, meze raf fiyatına {C['eta']} içinde kapında. 18+ ürünler dükkânda, kimlikle. {C['phone_display']}"
+    title = "Kartal Tekel Bayi | Eve Servis | Açık Tekel | Marin Tekel 2"
+    desc = f"Kartal tekel bayi ve market. Buz, içecek, meşrubat, soğuk meze, kuruyemiş eve servis. Her gün {C['opens']}–{C['closes']}, fiyat farkı yok. Size en yakın tekel: {C['phone_display']}"
     schemas = [
       local_business(),
       {"@context":"https://schema.org","@type":"WebSite","@id":C["domain"]+"/#website","url":C["domain"]+"/","name":"tekelsiparis.com","publisher":{"@id":C["domain"]+"/#business"},"inLanguage":"tr"},
       faq_schema(SSS[:6]),
-      {"@context":"https://schema.org","@type":"HowTo","name":"Kartal'da tekel siparişi (buz, mikser, meze) nasıl verilir","totalTime":"PT3M","step":[
+      {"@context":"https://schema.org","@type":"HowTo","name":"Kartal tekel bayi eve servis siparişi nasıl verilir","totalTime":"PT3M","step":[
         {"@type":"HowToStep","name":"Ara ya da yaz","text":f"{C['phone_display']} numarasını arayın veya WhatsApp'tan yazın."},
         {"@type":"HowToStep","name":"Adres ve ürünler","text":"Mahalle, sokak, bina, daire ve istediğiniz ürünleri tek mesajda gönderin."},
         {"@type":"HowToStep","name":"Kapıda teslim","text":f"Ortalama {C['eta']} içinde kurye kapınızda; nakit veya kartla ödeyin."}]},
@@ -652,9 +651,9 @@ def build_index():
 <section class="hero">
  <div class="wrap">
   <div>
-   <span class="eyebrow">Kartal · Karlıktepe · Tekel · Her gün {C['opens']}–{C['closes']}</span>
-   <h1>Kartal'ın gece 02:00'ye kadar açık tekeli. Buz ve mikser <em>gel-al fiyatına</em> kapında.</h1>
-   <p class="lead">Torba buz, tonik, soda, limon, meze, çerez, cips. Dükkânda ne kadarsa kapında da o kadar; ortalama <strong>{C['eta']}</strong> içinde Kartal'ın her mahallesine. Yaş sınırlı ürünler yalnızca dükkânda, kimlik kontrolüyle.</p>
+   <span class="eyebrow">Kartal Tekel Bayi · Eve Servis · Her gün {C['opens']}–{C['closes']}</span>
+   <h1>Kartal Tekel Bayi. <em>Eve servis</em>, gel-al fiyatına.</h1>
+   <p class="lead">Kartal'da size en yakın tekel market. Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünleri için bir telefon ya da WhatsApp mesajı yeterli. Siparişiniz ortalama <strong>{C['eta']}</strong> içinde evinizde ya da iş yerinizde.</p>
    <div class="actions">
     <a class="btn btn-wa" href="{WA_DEFAULT}" rel="noopener">{I_WA}WhatsApp'tan Sipariş Ver</a>
     <a class="btn btn-ghost" href="tel:{C['phone_e164']}">{I_TEL}{C['phone_display']}</a>
@@ -664,19 +663,18 @@ def build_index():
     <div><b>{C['eta']}</b>ortalama teslimat</div>
     <div><b>%0</b>fiyat farkı</div>
     <div><b>02:00</b>gece açık tekel</div>
-    <div><b>Kartal</b>tekel bayii</div>
    </div>
   </div>
   <aside class="card ordercard" aria-labelledby="oc">
-   <h2 id="oc">Hemen sipariş ver</h2>
-   <p style="color:var(--ink-2);margin:0">Uygulama yok, üyelik yok. Yaz ya da ara, gerisi bizde.</p>
+   <h2 id="oc">Hemen sipariş verin</h2>
+   <p style="color:var(--ink-2);margin:0">Telefon ya da WhatsApp. Uygulama yok, üyelik yok.</p>
    <div class="hours"><span class="status" data-status><i></i><span data-status-text>{C['opens']}–{C['closes']}</span></span><b>{C['opens']}–{C['closes']}</b></div>
    <div class="stack">
     <a class="btn btn-wa" href="{WA_DEFAULT}" rel="noopener">{I_WA}WhatsApp ile yaz</a>
     <a class="btn btn-tel" href="tel:{C['phone_e164']}">{I_TEL}{C['phone_display']}</a>
     <a class="btn btn-ink" href="/siparis.html">Ürün seçerek sipariş oluştur →</a>
    </div>
-   <p class="note">Kapıda nakit veya kart · Soğuk ürünler termal çantada</p>
+   <p class="note">Kapıda kart ya da nakit · Soğuk ürünler termal çantada</p>
    <div class="addr">📍 {esc(C['address_full'])}</div>
   </aside>
  </div>
@@ -685,18 +683,18 @@ def build_index():
 
 <section>
  <div class="wrap">
-  <div class="sec-head rv"><span class="eyebrow">Nasıl çalışır</span><h2>Üç adımda kapında</h2><p>Mahalle tekeli hızı, dijital kolaylık. Sepet, minimum tutar, uygulama derdi yok.</p></div>
+  <div class="sec-head rv"><span class="eyebrow">Nasıl çalışır</span><h2>Bir telefon yeterli</h2><p>Kartal tekel bayi olarak telefon ya da WhatsApp mesajınızla siparişinizi en kısa sürede evinize ya da iş yerinize teslim ediyoruz.</p></div>
   <div class="steps">
-   <div class="step rv"><h3>Ara ya da WhatsApp'tan yaz</h3><p>{C['phone_display']}. Adresini ve istediklerini tek mesajda gönder. İstersen <a href="/siparis.html">ürün seçerek</a> hazır mesaj oluştur.</p></div>
-   <div class="step rv"><h3>Hazırlayıp yola çıkarırız</h3><p>Stok ve tahmini süreyi hemen yazarız. Tonik ve sodalar dolaptan, buz derin dondurucudan çıkar; termal çantaya girer.</p></div>
-   <div class="step rv"><h3>Kapıda öde, keyfine bak</h3><p>Nakit ya da kart, kurye POS taşır. Fiyat dükkândaki raf fiyatıyla aynıdır.</p></div>
+   <div class="step rv"><h3>Arayın ya da yazın</h3><p>{C['phone_display']}. Adresinizi ve istediklerinizi söyleyin. İsterseniz <a href="/siparis.html">ürün seçerek</a> hazır WhatsApp mesajı oluşturun.</p></div>
+   <div class="step rv"><h3>Hazırlayalım</h3><p>Stok ve tahmini süreyi hemen söyleriz. İçecekler dolaptan, buz derin dondurucudan çıkar, termal çantaya girer.</p></div>
+   <div class="step rv"><h3>Kapıda ödeyin</h3><p>Kart ya da nakit, kurye POS taşır. Fiyat dükkândaki fiyatla aynıdır.</p></div>
   </div>
  </div>
 </section>
 
 <section style="padding-top:0">
  <div class="wrap">
-  <div class="sec-head rv"><span class="eyebrow">Ne var?</span><h2>Masanın eksiği neyse, kapında</h2><p>Buz, mikser, meze, çerez ve mahalle tekelinde olan her şey. Listede olmayan bir şey mi lazım? Yaz, varsa getiririz; yoksa bulup getiririz.</p></div>
+  <div class="sec-head rv"><span class="eyebrow">Ürünler</span><h2>Kartal Açık Tekel Market</h2><p>Raflarımızda ve dolaplarımızda ihtiyacınız olan her şey. Listede olmayanı sorun, bulup getirelim.</p></div>
   <div class="cats">{cats}</div>
   <p style="margin-top:20px"><a class="btn btn-ink" href="/urunler.html">Tüm kategoriler →</a></p>
  </div>
@@ -704,27 +702,26 @@ def build_index():
 
 <section class="why">
  <div class="wrap">
-  <div class="sec-head rv"><span class="eyebrow">Neden Marin?</span><h2>Kartal'ın tekeli: 02:00'ye kadar açık, raf fiyatına kapında</h2><p>Kendi kuryemiz, kendi dükkânımız. Platform komisyonu ödemiyoruz, o farkı size yansıtmıyoruz.</p></div>
+  <div class="sec-head rv"><span class="eyebrow">Neden Marin?</span><h2>Size en yakın tekel market olmak için</h2><p>Kendi kuryemiz, kendi dükkânımız. Komisyon yok, fiyat farkı yok. Her gün daha iyi hizmet için çalışıyoruz.</p></div>
   <div class="why-grid">
-   <div class="why-item rv"><b>%0</b><h3>Fiyat farkı yok</h3><p>Teslimat fiyatı = raf fiyatı. Varsa teslimat ücreti sipariş anında açıkça söylenir, sürpriz yok.</p></div>
-   <div class="why-item rv"><b>18 sa</b><h3>Her gün {C['opens']}–{C['closes']}</h3><p>Kartal'da gece açık tekel arayanların adresi. Dükkân ve teslimat 02:00'ye kadar.</p></div>
-   <div class="why-item rv"><b>5.0</b><h3>Google'da tam puan</h3><p>"Aradığım her şey var, yoksa getiriyorlar." Müşterilerimizin sözü, bizim sözümüz değil.</p></div>
+   <div class="why-item rv"><b>%0</b><h3>Fiyat farkı yok</h3><p>Kapınıza gelen ürünün fiyatı dükkândaki fiyatla aynı. Varsa teslimat ücreti sipariş sırasında söylenir.</p></div>
+   <div class="why-item rv"><b>18 sa</b><h3>Her gün {C['opens']}–{C['closes']}</h3><p>Kartal'da gece açık tekel bayi. Gece 02:00'ye kadar evlere ve iş yerlerine servis.</p></div>
+   <div class="why-item rv"><b>5.0</b><h3>Google'da tam puan</h3><p>"Aradığım her şey var, yoksa getiriyorlar." Müşterilerimizin sözü.</p></div>
   </div>
  </div>
 </section>
 
 <section style="padding-bottom:0">
  <div class="wrap">
-  <div class="sec-head rv"><span class="eyebrow">Kartal tekel</span><h2>Kartal'da tekel arayanların adresi</h2><p>"Kartal tekel", "Karlıktepe tekel", "Kartal gece açık tekel", "en yakın tekel": hepsinin cevabı İnönü Caddesi No:75. Kartal merkeze, metroya ve sahile dakikalar mesafede, her gün 02:00'ye kadar açık tekel bayii. <a href="/kartal-tekel.html">Kartal tekel sayfasına gidin →</a></p></div>
-  <div class="card rv" style="border-left:6px solid var(--amber)"><h3 style="margin-bottom:.3em">18+ ürünler hakkında</h3><p style="margin:0;color:var(--ink-2)">Alkollü içki ve tütün ürünleri mevzuat gereği (4250 ve 4207 sayılı kanunlar) telefon, WhatsApp veya internetten sipariş edilemez ve eve gönderilemez. Bu ürünler yalnızca dükkânımızda, 18 yaş üstüne kimlik kontrolüyle satılır. Buz, tonik, soda, meze ve diğer her şeyi kapınıza getiriyoruz.</p></div>
+  <div class="sec-head rv"><span class="eyebrow">En yakın tekel bayi</span><h2>Kartal'da size en yakın tekel</h2><p>Karlıktepe, İnönü Caddesi No:75. Kartal merkeze, sahile ve metroya dakikalar mesafede, her gün 02:00'ye kadar açık. <a href="/kartal-tekel.html">Kartal Tekel Bayi sayfası →</a></p></div>
  </div>
 </section>
 
 <section>
  <div class="wrap">
-  <div class="sec-head rv"><span class="eyebrow">Teslimat bölgeleri</span><h2>Kartal'ın her mahallesine</h2><p>Karlıktepe'den yola çıkıyoruz. Süreler akşam trafiği dahil gerçekçi ortalamalardır.</p></div>
+  <div class="sec-head rv"><span class="eyebrow">Eve servis</span><h2>Eve Servis İmkanımız Olan Bölgeler</h2><p>Kartal'ın tüm mahallelerine ve çevre semtlere haftanın yedi günü eve servis. Süreler akşam trafiği dahil ortalamadır.</p></div>
   <div class="areas rv">{areas}</div>
-  <p style="margin-top:18px;color:var(--ink-2)">Mahallen listede yok mu? <a href="{wa('Merhaba, adresime teslimat yapıyor musunuz? Adres: ')}" rel="noopener">WhatsApp'tan sor</a>, hemen söyleyelim.</p>
+  <p style="margin-top:18px;color:var(--ink-2)">Mahalleniz listede yok mu? <a href="{wa('Merhaba, adresime eve servis var mı? Adres: ')}" rel="noopener">WhatsApp'tan sorun</a>, hemen söyleyelim.</p>
  </div>
 </section>
 
@@ -741,7 +738,7 @@ def build_index():
 </section>
 
 {faq_block(SSS[:6], "Sık sorulanlar", 'Daha fazlası <a href="/sss.html">SSS sayfasında</a>.')}
-{cta_band()}
+{cta_band("Sipariş için bir telefon yeterli.", "Her gün 08:00–02:00. Kapıda kart ya da nakit. Fiyat farkı yok.")}
 """
     write("/index.html", head(title, desc, "/", schemas) + body + foot())
 
@@ -752,23 +749,23 @@ def slug(s):
 
 # ─────────────────────────────── SİPARİŞ ───────────────────────────────
 def build_siparis():
-    title = "Sipariş Ver | Buz, Mikser, Meze WhatsApp Siparişi | Marin Kartal"
-    desc = f"Buz, tonik, soda, meze ve çerezi seç, adresini yaz, tek dokunuşla WhatsApp siparişi oluştur. Kartal'ın her mahallesine {C['eta']} içinde, raf fiyatına."
+    title = "Sipariş Ver | Kartal Tekel Eve Servis, WhatsApp Sipariş | Marin"
+    desc = f"Ürünleri seçin, adresinizi yazın, tek dokunuşla WhatsApp siparişi oluşturun. Kartal tekel bayi eve servis: {C['eta']} içinde, fiyat farkı yok."
     groups = "".join(f'<div class="pgroup"><h3><span>{k[1]}</span>{k[0]}</h3><div class="items">' + "".join(f'<div class="pitem" data-name="{esc(i)}"><span>{esc(i)}</span><span class="q"><button class="minus" type="button" aria-label="{esc(i)} azalt">−</button><output>0</output><button class="plus" type="button" aria-label="{esc(i)} ekle">+</button></span></div>' for i in k[3]) + '</div></div>' for k in KATEGORILER)
     schemas = [breadcrumb([("/","Ana Sayfa"),("/siparis.html","Sipariş Ver")]), {"@context":"https://schema.org","@type":"WebPage","name":title,"description":desc,"url":C["domain"]+"/siparis.html","isPartOf":{"@id":C["domain"]+"/#website"},"about":{"@id":C["domain"]+"/#business"}}]
-    body = page_head("Sipariş oluştur", "Ürünleri işaretle, adresini yaz, WhatsApp'a gönder. Mesajı biz okur, stok ve süreyi hemen yazarız.", [("/","Ana Sayfa"),("/siparis.html","Sipariş Ver")]) + f"""
+    body = page_head("Sipariş oluşturun", "Ürünleri işaretleyin, adresinizi yazın, WhatsApp'a gönderin. Stok ve süreyi hemen yazarız.", [("/","Ana Sayfa"),("/siparis.html","Sipariş Ver")]) + f"""
 <section><div class="wrap"><div class="builder">
- <div><p style="background:#FFF4D6;border:1px solid #F3D48A;border-radius:10px;padding:12px 16px;font-size:.92rem;color:var(--ink-2)"><strong>Not:</strong> Alkollü içki ve tütün ürünleri mevzuat gereği uzaktan sipariş edilemez ve eve gönderilmez; yalnızca dükkânda, kimlikle. Bu liste teslimata uygun ürünleri içerir.</p>{groups}<p style="color:var(--ink-2)">Listede olmayan bir ürün mü var? Sağdaki "Not" alanına yaz, varsa getiririz.</p></div>
+ <div>{groups}<p style="color:var(--ink-2)">Listede olmayan bir ürün mü var? Sağdaki "Not" alanına yazın, bulup getirelim.</p></div>
  <div class="side"><div class="card summary">
   <h3>Siparişin</h3>
-  <ul id="cartlist"></ul><p class="empty" id="cartempty">Henüz ürün seçmedin. Soldan + ile ekle.</p>
+  <ul id="cartlist"></ul><p class="empty" id="cartempty">Henüz ürün seçmediniz. Soldan + ile ekleyin.</p>
   <label for="addr">Adres (mahalle, sokak, bina, daire, zil)</label>
   <textarea id="addr" rows="3" placeholder="Örn: Kordonboyu Mah. Ankara Cad. No:12 Deniz Apt. D:5, zil: Yılmaz"></textarea>
   <label for="note">Not (marka tercihi, kapı kodu vb.)</label>
   <input id="note" type="text" placeholder="İsteğe bağlı">
   <a id="sendwa" class="btn btn-wa" href="{WA_DEFAULT}" rel="noopener">{I_WA}WhatsApp'a Gönder</a>
   <a class="btn btn-tel" href="tel:{C['phone_e164']}" style="margin-top:8px">{I_TEL}Ya da ara: {C['phone_display']}</a>
-  <p style="font-size:.85rem;color:var(--ink-3);margin:12px 0 0">Kapıda nakit/kart · Raf fiyatı · Her gün {C['opens']}–{C['closes']}</p>
+  <p style="font-size:.85rem;color:var(--ink-3);margin:12px 0 0">Kapıda kart ya da nakit · Fiyat farkı yok · Her gün {C['opens']}–{C['closes']}</p>
  </div></div>
 </div></div></section>
 {faq_block(SSS[:4])}
@@ -777,28 +774,28 @@ def build_siparis():
 
 # ─────────────────────────────── ÜRÜNLER ───────────────────────────────
 def build_urunler():
-    title = "Ürünler | Buz, Tonik, Soda, Meze, Çerez | Marin Tekel Kartal"
-    desc = "Kartal'da tekelden eve teslim: torba buz, tonik, soda, mikserler, meze, çerez, cips, çikolata, temel gıda. Raf fiyatına. Yaş sınırlı ürünler yalnızca dükkânda."
+    title = "Ürünler | Kartal Açık Tekel Market, Eve Servis | Marin Tekel 2"
+    desc = "Kartal tekel bayi ürünleri: buz, içecekler, meşrubatlar, soğuk meze çeşitleri, kuruyemiş, su ve süt ürünleri, market ürünleri. Eve servis, fiyat farkı yok."
     cats = "".join(f'<div class="cat" id="{slug(k[0])}"><div class="ico">{k[1]}</div><h3>{k[0]}</h3><p>{k[2]}</p><ul>{"".join(f"<li>{i}</li>" for i in k[3])}</ul></div>' for k in KATEGORILER)
     schemas=[breadcrumb([("/","Ana Sayfa"),("/urunler.html","Ürünler")]),{"@context":"https://schema.org","@type":"ItemList","name":"Marin ürün kategorileri","itemListElement":[{"@type":"ListItem","position":i+1,"name":k[0],"url":C["domain"]+"/urunler.html#"+slug(k[0])} for i,k in enumerate(KATEGORILER)]}]
-    body = page_head("Tekelde ne varsa (teslimata uygun olanlar)", "Fiyatlar dükkândaki raf fiyatıyla birebir aynı. Marka belirtmezseniz en çok tercih edileni göndeririz. Alkollü içki ve tütün ürünleri mevzuat gereği yalnızca dükkânda, kimlik kontrolüyle satılır.", [("/","Ana Sayfa"),("/urunler.html","Ürünler")]) + f"""
+    body = page_head("Kartal Açık Tekel Market", "Raflarımızda ve dolaplarımızda ihtiyacınız olan her şey. Fiyatlar dükkândaki fiyatla aynı. Marka belirtmezseniz en çok tercih edileni göndeririz.", [("/","Ana Sayfa"),("/urunler.html","Ürünler")]) + f"""
 <section><div class="wrap"><div class="cats">{cats}</div>
-<div class="card" style="margin-top:28px"><h3>Fiyat listesi neden yok?</h3><p style="margin:0;color:var(--ink-2)">Çünkü fiyatlar raf etiketiyle aynı ve sık değişiyor; sitede eski fiyat görüp kapıda farklı fiyatla karşılaşmanızı istemiyoruz. Belirli bir ürünün fiyatını <a href="{wa('Merhaba, şu ürünün fiyatını öğrenebilir miyim: ')}" rel="noopener">WhatsApp'tan sorun</a>, saniyeler içinde yazalım.</p></div>
+<div class="card" style="margin-top:28px"><h3>Zengin çeşitlerimiz için bizi arayın</h3><p style="margin:0;color:var(--ink-2)">Fiyatlar dükkândaki etiketle aynı ve sık değişiyor; bu yüzden sitede liste tutmuyoruz. Aradığınız ürünü ve fiyatını <a href="{wa('Merhaba, şu ürün var mı, fiyatı nedir: ')}" rel="noopener">WhatsApp'tan sorun</a>, hemen yazalım.</p></div>
 </div></section>
-{cta_band("Seçtin mi? {eta} içinde kapında.")}
+{cta_band("Seçtiniz mi? {eta} içinde kapınızda.")}
 """
     write("/urunler.html", head(title, desc, "/urunler.html", schemas) + body + foot())
 
 # ─────────────────────────────── BÖLGELER ───────────────────────────────
 def build_bolgeler():
-    title = "Teslimat Bölgeleri | Kartal'ın Tüm Mahalleleri | Marin Tekel"
-    desc = "Kartal'ın tekeli Marin'den Karlıktepe, Kordonboyu, Yukarı, Orta, Hürriyet, Soğanlık, Cevizli, Yakacık, Dragos'a buz ve mikser servisi. Mahalle mahalle süreler."
+    title = "Eve Servis Bölgeleri | Kartal Tekel Bayi | Marin Tekel 2"
+    desc = "Kartal tekel bayi eve servis bölgeleri: Karlıktepe, Kordonboyu, Yukarı, Orta, Hürriyet, Soğanlık, Cevizli, Yakacık, Dragos ve çevresi. Mahalle mahalle süreler."
     rows = "".join(f'<tr><td><a href="/bolge/{b[0]}.html">{esc(b[1])}</a></td><td>{b[5]}</td><td>{b[2]}</td><td>{esc(b[3])}</td></tr>' for b in BOLGELER)
     schemas=[breadcrumb([("/","Ana Sayfa"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri")]),{"@context":"https://schema.org","@type":"ItemList","name":"Marin teslimat bölgeleri","itemListElement":[{"@type":"ListItem","position":i+1,"name":b[1],"url":C["domain"]+f"/bolge/{b[0]}.html"} for i,b in enumerate(BOLGELER)]}]
-    body = page_head("Kartal'ın her mahallesine gidiyoruz", f"Karlıktepe'deki dükkânımızdan motorlu kuryeyle. Süreler akşam trafiği dahil ortalamadır; gece daha hızlıdır.", [("/","Ana Sayfa"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri")]) + f"""
+    body = page_head("Eve Servis İmkanımız Olan Bölgeler", f"Kartal'ın tüm mahallelerine ve çevre semtlere haftanın yedi günü eve servis. Süreler akşam trafiği dahil ortalamadır; gece daha hızlıdır.", [("/","Ana Sayfa"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri")]) + f"""
 <section><div class="wrap">
 <div class="prose" style="max-width:100%"><div style="overflow-x:auto"><table><thead><tr><th>Mahalle</th><th>İlçe</th><th>Tahmini süre</th><th>Yakın noktalar</th></tr></thead><tbody>{rows}</tbody></table></div></div>
-<p style="color:var(--ink-2)">Adresiniz listede değilse de yazın; Kartal sınırına yakın Maltepe ve Pendik adreslerine çoğu zaman gidebiliyoruz.</p>
+<p style="color:var(--ink-2)">Adresiniz listede yoksa da yazın; Kartal sınırına yakın Maltepe ve Pendik adreslerine çoğu zaman gidebiliyoruz.</p>
 </div></section>
 {cta_band()}
 """
@@ -807,30 +804,29 @@ def build_bolgeler():
 def build_bolge(b):
     s,name,eta,near,note,ilce = b
     path = f"/bolge/{s}.html"
-    title = f"{name.split(' (')[0].replace(' Mahallesi','').replace('Yakacık Yeni Mahalle','Yakacık Yeni')} Tekel | Gece Açık, {eta} Kapında | Marin Kartal"
-    desc = f"{name.split(' (')[0]} ({ilce}) için gece 02:00'ye kadar açık tekel. Buz, tonik, soda, meze, çerez raf fiyatına ortalama {eta} içinde kapında. {C['phone_display']}"
+    title = f"{name.split(' (')[0].replace(' Mahallesi','').replace('Yakacık Yeni Mahalle','Yakacık Yeni')} Tekel Bayi | Eve Servis {eta} | Marin Kartal"
+    desc = f"{name.split(' (')[0]} tekel bayi: {ilce} {name.split(' (')[0]} bölgesine eve servis, ortalama {eta}. Her gün {C['opens']}–{C['closes']}, fiyat farkı yok. {C['phone_display']}"
     qs = [
-      (f"{name}'e en yakın tekel hangisi?", f"{C['brand']}, Karlıktepe İnönü Caddesi No:75'te; {name} bölgesine {eta} mesafede ve her gün {C['closes']}'ye kadar açık. Kartal'da bu saate kadar açık tekel sayısı çok azdır."),
-      (f"{name} bölgesine ne kadar sürede geliyorsunuz?", f"{name} için ortalama {eta}. Gece saatlerinde trafik olmadığından genelde daha hızlı."),
-      (f"{name}'e alkollü içecek gönderiyor musunuz?", "Hayır. Mevzuat gereği alkollü içki ve tütün ürünleri uzaktan sipariş edilemez, eve gönderilemez; yalnızca dükkânımızda kimlik kontrolüyle satılır. Buz, tonik, soda, meze ve çerez kapınıza gelir."),
-      (f"{name}'e gece de teslimat var mı?", f"Evet. Her gün {C['closes']}'ye kadar sipariş alıyor ve teslim ediyoruz."),
-      (f"{name}'de teslimat ücreti var mı?", "Ürün fiyatları raf fiyatıyla aynıdır. Bölgeye ve sipariş tutarına göre cüzi bir teslimat ücreti olabilir; varsa sipariş sırasında söylenir."),
-      ("Hangi ürünleri gönderiyorsunuz?", "Torba buz, tonik, soda, gazoz, limon-nane, meze, kuruyemiş, cips, çikolata, dondurma, ekmek-süt-yumurta, temizlik ve kişisel bakım, bebek bezi, çakmak, pil. Listede olmayanı sorun, varsa getiririz."),
+      (f"{name}'e en yakın tekel bayi hangisi?", f"{C['brand']}, Karlıktepe İnönü Caddesi No:75. {name} bölgesine {eta} mesafede, her gün {C['closes']}'ye kadar açık."),
+      (f"{name} bölgesine eve servis ne kadar sürer?", f"Ortalama {eta}. Gece saatlerinde trafik olmadığından genelde daha hızlı."),
+      (f"{name}'e gece de servis var mı?", f"Evet. Her gün {C['closes']}'ye kadar sipariş alıyor ve teslim ediyoruz."),
+      (f"{name}'de teslimat ücreti var mı?", "Ürün fiyatları dükkândaki fiyatla aynıdır. Bölgeye ve sipariş tutarına göre cüzi bir teslimat ücreti olabilir; varsa sipariş sırasında söylenir."),
+      ("Neler sipariş edebilirim?", "Buz, içecekler, meşrubatlar, soğuk meze, kuruyemiş, su ve süt ürünleri, çikolata, dondurma, temel gıda, temizlik ve kişisel bakım, bebek bezi, çakmak, pil. Listede olmayanı sorun, bulup getirelim."),
     ]
     others = [x for x in BOLGELER if x[0]!=s][:8]
     schemas = [
       local_business({"@id":C["domain"]+path+"#business","url":C["domain"]+path,"name":f"{C['brand']} – {name} Teslimat","areaServed":{"@type":"Place","name":f"{name}, {ilce}, İstanbul"}}),
       breadcrumb([("/","Ana Sayfa"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri"),(path,name)]),
       faq_schema(qs),
-      {"@context":"https://schema.org","@type":"Service","name":f"{name} tekel teslimatı (buz, mikser, meze)","serviceType":"Tekel ürünleri eve teslimat (yaş sınırlı ürünler hariç)","provider":{"@id":C["domain"]+"/#business"},"areaServed":{"@type":"Place","name":f"{name}, {ilce}, İstanbul"},"hoursAvailable":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":C["opens"],"closes":C["closes"]},"offers":{"@type":"Offer","priceCurrency":"TRY","description":"Raf fiyatına teslimat"}},
+      {"@context":"https://schema.org","@type":"Service","name":f"{name} tekel bayi eve servis","serviceType":"Tekel bayi ve market eve servis","provider":{"@id":C["domain"]+"/#business"},"areaServed":{"@type":"Place","name":f"{name}, {ilce}, İstanbul"},"hoursAvailable":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":C["opens"],"closes":C["closes"]},"offers":{"@type":"Offer","priceCurrency":"TRY","description":"Raf fiyatına teslimat"}},
     ]
     wa_msg = wa(f"Merhaba Marin, {name} bölgesine sipariş vermek istiyorum.\nAdres: \nÜrünler: ")
-    body = page_head(f"{name} tekel: gece 02:00'ye kadar açık", f"{ilce}, {name} için Kartal'ın tekeli. Buz, tonik, soda, meze ve çerez raf fiyatına, ortalama <strong>{eta}</strong> içinde kapında. Her gün {C['opens']}–{C['closes']}.", [("/","Ana Sayfa"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri"),(path,name)]) + f"""
+    body = page_head(f"{name} Tekel Bayi", f"{name} için size en yakın tekel market. Eve servis ortalama <strong>{eta}</strong>, fiyat farkı yok. Her gün {C['opens']}–{C['closes']}.", [("/","Ana Sayfa"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri"),(path,name)]) + f"""
 <section><div class="wrap"><div class="two">
  <div class="prose">
-  <p><strong>{name}</strong> ({ilce}) için en yakın gece açık tekel {C['brand']}. Karlıktepe İnönü Caddesi'ndeki dükkânımızdan torba buz, tonik, soda, gazoz, limon-nane, meze, kuruyemiş, cips ve çikolatayı kendi kuryemizle {name} bölgesine ortalama <strong>{eta}</strong> içinde ulaştırıyoruz. Alkollü içki ve tütün ürünleri mevzuat gereği yalnızca dükkânda, kimlik kontrolüyle satılır; sipariş akışına dahil değildir.</p>
-  <h2>{name} tekel bayii: en yakın gece açık tekel</h2>
-  <p>{name}'de tekel arayanlar için {C['brand']} en pratik seçenek: her gün {C['opens']}–{C['closes']} açık, {name} bölgesine {eta} içinde kurye. Alkollü içki ve tütün ürünleri için dükkâna gelin (18+ kimlik); buz, mikser ve meze için yazın, kapınıza gelsin.</p>
+  <p><strong>{C['brand']}</strong>, {ilce} {name} bölgesine eve servis yapan tekel bayi ve markettir. Buz, içecekler, meşrubatlar, soğuk meze, kuruyemiş ve market ürünleri için bir telefon ya da WhatsApp mesajı yeterli. Siparişiniz Karlıktepe İnönü Caddesi'ndeki dükkânımızdan kendi kuryemizle ortalama <strong>{eta}</strong> içinde evinizde ya da iş yerinizde.</p>
+  <h2>{name}'e en yakın tekel bayi</h2>
+  <p>{name}'de tekel arayanlar için {C['brand']} en yakın ve en geç kapanan seçeneklerden biri: her gün {C['opens']}–{C['closes']} açık, {name} bölgesine {eta} içinde kurye. Fiyat farkı yok, kapıda kart ya da nakit.</p>
   <h2>{name} için teslimat notu</h2>
   <p>{note} Yakın noktalar: {near}.</p>
   <h2>Nasıl sipariş verilir?</h2>
@@ -838,21 +834,21 @@ def build_bolge(b):
    <li><a href="tel:{C['phone_e164']}">{C['phone_display']}</a> numarasını arayın ya da <a href="{wa_msg}" rel="noopener">WhatsApp'tan yazın</a>.</li>
    <li>Adresinizi tam yazın: {name}, sokak, bina, daire, zil.</li>
    <li>Ürünleri yazın ya da <a href="/siparis.html">sipariş sayfasından</a> seçin.</li>
-   <li>Kapıda nakit veya kartla ödeyin.</li>
+   <li>Kapıda kart ya da nakit ödeyin.</li>
   </ol>
   <h2>{name}'de en çok ne isteniyor?</h2>
-  <p>Akşam saatlerinde torba buz, tonik ve soda; gece yarısından sonra çerez, cips ve çikolata; sabahları ekmek, süt ve yumurta. Hepsi dükkândaki raf fiyatıyla.</p>
+  <p>Akşam saatlerinde torba buz ve soğuk meşrubat; gece yarısından sonra kuruyemiş, cips ve çikolata; sabahları ekmek, süt ve yumurta. Hepsi dükkândaki fiyatla.</p>
   <h2>Yakın bölgeler</h2>
   <div class="areas">{''.join(f'<a href="/bolge/{o[0]}.html">{esc(o[1])}<small>{o[2]}</small></a>' for o in others)}</div>
  </div>
  <aside class="side"><div class="card">
   <h3>{name} için sipariş</h3>
-  <dl class="kv"><dt>Süre</dt><dd>{eta}</dd><dt>Saat</dt><dd>Her gün {C['opens']}–{C['closes']}</dd><dt>Fiyat</dt><dd>Raf fiyatı, fark yok</dd><dt>Ödeme</dt><dd>Kapıda nakit / kart</dd></dl>
+  <dl class="kv"><dt>Süre</dt><dd>{eta}</dd><dt>Saat</dt><dd>Her gün {C['opens']}–{C['closes']}</dd><dt>Fiyat</dt><dd>Fiyat farkı yok</dd><dt>Ödeme</dt><dd>Kapıda kart / nakit</dd></dl>
   <div class="stack" style="display:grid;gap:8px;margin-top:16px"><a class="btn btn-wa" href="{wa_msg}" rel="noopener" style="justify-content:center">{I_WA}WhatsApp'tan Sipariş</a><a class="btn btn-tel" href="tel:{C['phone_e164']}" style="justify-content:center">{I_TEL}{C['phone_display']}</a></div>
  </div></aside>
 </div></div></section>
-{faq_block(qs, f"{name} teslimatı hakkında")}
-{cta_band("{name} için buz ve mikser siparişi ver.".replace("{name}",name))}
+{faq_block(qs, f"{name} eve servis hakkında")}
+{cta_band("{name} için şimdi sipariş verin.".replace("{name}",name))}
 """
     write(path, head(title, desc, path, schemas) + body + foot())
 
@@ -860,25 +856,25 @@ def build_bolge(b):
 # ─────────────────────────────── KARTAL TEKEL (hedef: "kartal tekel" sorguları) ───────────────────────────────
 def build_kartal_tekel():
     path="/kartal-tekel.html"
-    title = "Kartal Tekel | Gece 02:00'ye Kadar Açık Tekel Bayii | Marin"
-    desc = f"Kartal'da tekel mi arıyorsunuz? Marin Tekel 2, Karlıktepe İnönü Cd. No:75'te her gün {C['opens']}–{C['closes']} açık tekel bayii. Kartal merkez, sahil ve metroya yakın. {C['phone_display']}"
+    title = "Kartal Tekel Bayi | Açık Tekel, Eve Servis | Marin Tekel 2"
+    desc = f"Kartal tekel bayi Marin Tekel 2: Karlıktepe İnönü Cd. No:75, her gün {C['opens']}–{C['closes']} açık. Eve servis, fiyat farkı yok. Size en yakın tekel market: {C['phone_display']}"
     qs = [
-      ("Kartal'da gece açık tekel var mı?", f"Evet. {C['brand']} her gün {C['closes']}'ye kadar açık. Kartal'da 02:00'ye kadar açık tekel bayii sayısı çok azdır; Karlıktepe İnönü Caddesi No:75'teyiz."),
-      ("Kartal'da 24 saat açık tekel var mı?", "Kartal'da 7/24 açık tekel yoktur; mevzuat gereği alkollü içki satışı 22:00–06:00 arasında yapılamaz. Dükkânımız 02:00'ye kadar açıktır ve bu saatlerde buz, mikser, meze, çerez ve market ürünleri satışı ile teslimatı sürer."),
+      ("Kartal'da gece açık tekel var mı?", f"Evet. {C['brand']} her gün {C['closes']}'ye kadar açık. Karlıktepe İnönü Caddesi No:75'teyiz; gece 02:00'ye kadar eve servis devam eder."),
+      ("Kartal'da 24 saat açık tekel var mı?", "Kartal'da 7/24 açık tekel yok. Biz her gün 08:00–02:00 açığız; Kartal'ın en geç kapanan tekel bayilerinden biriyiz."),
       ("Kartal'da en yakın tekel nerede?", "Karlıktepe'deyseniz İnönü Caddesi No:75. Kartal merkez, Kordonboyu sahil, Yukarı ve Orta Mahalle'den 5–10 dakika; Soğanlık metro ve Hürriyet'ten 10–15 dakika."),
-      ("Kartal tekel telefon numarası nedir?", f"{C['phone_display']}. Aynı numara WhatsApp'tır; buz, mikser ve meze siparişi için yazabilirsiniz."),
-      ("Tekelden eve sipariş verebilir miyim?", "Buz, tonik, soda, limon, meze, çerez, cips, çikolata ve market ürünleri için evet, raf fiyatına kapınıza geliyor. Alkollü içki ve tütün ürünleri mevzuat gereği (4250 ve 4207 sayılı kanunlar) uzaktan satılamaz ve eve gönderilemez; bunlar için dükkâna gelin, 18+ kimlik kontrolüyle."),
+      ("Kartal tekel telefon numarası nedir?", f"{C['phone_display']}. Aynı numara WhatsApp'tır; sipariş için arayabilir ya da yazabilirsiniz."),
+      ("Tekelden eve sipariş verebilir miyim?", "Evet. Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünleri için bir telefon ya da WhatsApp mesajı yeterli. Fiyat farkı yok, kapıda kart ya da nakit."),
       ("Kartal sahilden tekele nasıl giderim?", "Kordonboyu'ndan İnönü Caddesi'ne kuzeye çıkın; yürüyerek 10–12 dakika, araçla 4–5 dakika. Yol tarifi için Google Haritalar linkine tıklayın."),
     ]
     mahalle_links = "".join(f'<a href="/bolge/{b[0]}.html">{esc(b[1])} tekel<small>{b[2]}</small></a>' for b in BOLGELER)
     schemas=[breadcrumb([("/","Ana Sayfa"),(path,"Kartal Tekel")]), faq_schema(qs),
       {"@context":"https://schema.org","@type":"WebPage","name":title,"description":desc,"url":C["domain"]+path,"isPartOf":{"@id":C["domain"]+"/#website"},"about":{"@id":C["domain"]+"/#business"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".page-head h1",".page-head p"]}}]
-    body = page_head("Kartal tekel: Karlıktepe'de, 02:00'ye kadar açık", f"Kartal'da tekel arıyorsanız adres belli: {C['brand']}, İnönü Caddesi No:75. Kartal merkez, sahil ve metroya dakikalar uzaklıkta, her gün {C['opens']}–{C['closes']} açık tekel bayii.", [("/","Ana Sayfa"),(path,"Kartal Tekel")]) + f"""
+    body = page_head("Kartal Tekel Bayi", f"{C['brand']}, Karlıktepe İnönü Caddesi No:75. Kartal merkez, sahil ve metroya dakikalar uzaklıkta, her gün {C['opens']}–{C['closes']} açık tekel bayi ve market. Eve servis için bir telefon yeterli.", [("/","Ana Sayfa"),(path,"Kartal Tekel")]) + f"""
 <section><div class="wrap"><div class="two">
  <div class="prose">
-  <p><strong>{C['brand']}</strong>, Kartal'ın Karlıktepe Mahallesi'nde faaliyet gösteren bir tekel bayiidir. Kartal'da tekel arayanların en sık sorduğu üç şey için kısa cevap: <strong>Nerede?</strong> İnönü Caddesi No:75, Kartal merkezin hemen kuzeyi. <strong>Kaça kadar açık?</strong> Her gün {C['closes']}'ye kadar. <strong>Telefon?</strong> <a href="tel:{C['phone_e164']}">{C['phone_display']}</a>.</p>
+  <p><strong>{C['brand']}</strong>, Kartal Karlıktepe'de açık tekel bayi ve markettir. <strong>Nerede?</strong> İnönü Caddesi No:75, Kartal merkezin hemen kuzeyi. <strong>Kaça kadar açık?</strong> Her gün {C['closes']}'ye kadar. <strong>Telefon?</strong> <a href="tel:{C['phone_e164']}">{C['phone_display']}</a>.</p>
   <h2>Kartal'da gece açık tekel</h2>
-  <p>Kartal'da çoğu tekel 23:00–00:00 arasında kapanır. Biz dükkânı {C['closes']}'ye kadar açık tutuyoruz; sahilden dönenler, geç çalışanlar ve hastane çevresinde kalanlar için. Alkollü içki satışı mevzuat gereği 22:00'den sonra yapılmaz; gece saatlerinde buz, tonik, soda, meze, çerez ve market ürünleri satışı ile teslimatı devam eder.</p>
+  <p>Kartal'da çoğu tekel 23:00–00:00 arasında kapanır. Biz dükkânı {C['closes']}'ye kadar açık tutuyoruz; sahilden dönenler, geç çalışanlar ve hastane çevresinde kalanlar için. Gece 02:00'ye kadar evlere ve iş yerlerine servis devam eder.</p>
   <h2>Kartal merkez, sahil ve metroya yakın tekel</h2>
   <ul>
    <li><strong>Kartal Meydanı / Kordonboyu sahil:</strong> 4–5 dk araçla, 10–12 dk yürüyerek.</li>
@@ -887,11 +883,11 @@ def build_kartal_tekel():
    <li><strong>Kartal Belediyesi / Yukarı Mahalle:</strong> 3–5 dk araçla.</li>
    <li><strong>Dr. Lütfi Kırdar Şehir Hastanesi (Cevizli):</strong> 10–12 dk araçla.</li>
   </ul>
-  <h2>Kartal tekel bayii: dükkânda ne var?</h2>
-  <p>Geniş soğuk içecek dolabı, her saat torba buz, tonik-soda-gazoz ve mikserler, meze ve çerez rafı, çikolata, dondurma, temel gıda, kişisel bakım ve temizlik. Alkollü içki ve tütün ürünleri 18 yaş üstüne, kimlik kontrolüyle, yalnızca dükkânda satılır.</p>
-  <h2>Tekelden eve ne sipariş edilir?</h2>
-  <p>Buz, mikser, meze, çerez, cips, çikolata, su, ayran, ekmek-süt-yumurta, temizlik ve kişisel bakım ürünleri: hepsi raf fiyatına, ortalama {C['eta']} içinde Kartal'ın her mahallesine. <a href="/siparis.html">Sipariş oluşturun</a> ya da <a href="{WA_DEFAULT}" rel="noopener">WhatsApp'tan yazın</a>. Alkollü içki ve tütün ürünleri mevzuat gereği sipariş akışında yoktur.</p>
-  <h2>Kartal'ın mahallelerine en yakın tekel</h2>
+  <h2>Kartal açık tekel market: dükkânda ne var?</h2>
+  <p>Geniş soğuk içecek dolabı, her saat torba buz, soda-tonik-gazoz ve meşrubatlar, soğuk meze ve kuruyemiş rafı, çikolata, dondurma, su ve süt ürünleri, temel gıda, kişisel bakım ve temizlik.</p>
+  <h2>Eve servis</h2>
+  <p>Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünleri ortalama {C['eta']} içinde Kartal'ın her mahallesine, fiyat farkı olmadan. <a href="/siparis.html">Sipariş oluşturun</a> ya da <a href="{WA_DEFAULT}" rel="noopener">WhatsApp'tan yazın</a>.</p>
+  <h2>Eve servis imkanımız olan bölgeler</h2>
   <div class="areas">{mahalle_links}</div>
  </div>
  <aside class="side"><div class="card">
@@ -901,27 +897,27 @@ def build_kartal_tekel():
  </div><div class="map" data-src="{C['maps_embed']}" style="margin-top:14px"></div></aside>
 </div></div></section>
 {faq_block(qs, "Kartal tekel hakkında sık sorulanlar")}
-{cta_band("Buz ve mikser için yaz, dükkân için gel.", "Her gün 02:00'ye kadar. Raf fiyatı, fark yok.")}
+{cta_band("Size en yakın tekel market.", "Her gün 08:00–02:00. Eve servis, fiyat farkı yok.")}
 """
     write(path, head(title, desc, path, schemas) + body + foot())
 
 # ─────────────────────────────── SSS ───────────────────────────────
 def build_sss():
-    title = "SSS | Kartal Tekel Siparişi Hakkında Her Şey | Marin"
-    desc = "Kartal'ın tekeli Marin: hangi ürünler eve gelir, alkol neden gönderilmez, teslimat süresi, fiyat farkı, çalışma saatleri, bölgeler ve ödeme."
+    title = "S.S.S | Kartal Tekel Bayi Eve Servis | Marin Tekel 2"
+    desc = "Kartal tekel bayi eve servis hakkında sık sorulanlar: sipariş, süre, fiyat farkı, çalışma saatleri, bölgeler, ödeme ve gece servisi."
     schemas=[breadcrumb([("/","Ana Sayfa"),("/sss.html","SSS")]), faq_schema(SSS)]
-    body = page_head("Sık sorulan sorular", "Cevabını bulamadığınız soru için WhatsApp'tan yazın, dakikalar içinde dönelim.", [("/","Ana Sayfa"),("/sss.html","SSS")]) + faq_block(SSS, "Her şeyi sorduk, cevapladık") + cta_band()
+    body = page_head("Sık Sorulan Sorular", "Cevabını bulamadığınız soru için WhatsApp'tan yazın, hemen dönelim.", [("/","Ana Sayfa"),("/sss.html","SSS")]) + faq_block(SSS, "Sık sorulan sorular") + cta_band()
     write("/sss.html", head(title, desc, "/sss.html", schemas) + body + foot())
 
 # ─────────────────────────────── HAKKIMIZDA ───────────────────────────────
 def build_hakkimizda():
-    title = "Hakkımızda | Karlıktepe'nin Tekeli | Marin Tekel 2 Kartal"
-    desc = "Marin Tekel 2, Kartal Karlıktepe İnönü Caddesi'nde esnaf bir tekel bayii. Google'da 5.0 puan. Neden 02:00'ye kadar açığız, neden fiyat farkı almıyoruz."
+    title = "Hakkımızda | Kartal Karlıktepe Tekel Bayi | Marin Tekel 2"
+    desc = "Marin Tekel 2, Kartal Karlıktepe İnönü Caddesi'nde tekel bayi ve market. Google'da 5.0 puan. Her gün 02:00'ye kadar açık, eve serviste fiyat farkı yok."
     schemas=[breadcrumb([("/","Ana Sayfa"),("/hakkimizda.html","Hakkımızda")]),{"@context":"https://schema.org","@type":"AboutPage","name":title,"url":C["domain"]+"/hakkimizda.html","about":{"@id":C["domain"]+"/#business"}}]
-    body = page_head("Karlıktepe'nin tekeli, Kartal'ın gece adresi", "İnönü Caddesi'nde bir esnaf tekeli. Geniş içecek rafları, her saat buz, masanın tüm eksikleri.", [("/","Ana Sayfa"),("/hakkimizda.html","Hakkımızda")]) + f"""
+    body = page_head("Kartal Karlıktepe Tekel Bayi", "İnönü Caddesi'nde esnaf bir tekel bayi ve market. Geniş içecek dolapları, her saat buz, soğuk meze ve kuruyemiş.", [("/","Ana Sayfa"),("/hakkimizda.html","Hakkımızda")]) + f"""
 <section><div class="wrap"><div class="two">
  <div class="prose">
-  <p><strong>{C['brand']}</strong>, Kartal'ın Karlıktepe Mahallesi'nde, İnönü Caddesi No:75'te bulunan bir tekel bayiidir. Tabeladaki "2", Kartal'daki ikinci dükkânımız olduğu anlamına gelir; aynı esnaf anlayışıyla, daha geniş raflarla. Yaş sınırlı ürünler yalnızca dükkânda, 18 yaş üstüne kimlik kontrolüyle satılır; buz, mikser, meze ve diğer her şeyi eve getiriyoruz.</p>
+  <p><strong>{C['brand']}</strong>, Kartal'ın Karlıktepe Mahallesi'nde, İnönü Caddesi No:75'te bulunan bir tekel bayi ve markettir. Tabeladaki "2", Kartal'daki ikinci dükkânımız olduğu anlamına gelir; aynı esnaf anlayışıyla, daha geniş raflarla. Kartal ve çevre semtlere haftanın yedi günü eve servis yapıyoruz.</p>
   <h2>Neden gece 02:00'ye kadar açığız?</h2>
   <p>Kartal sahili, hastane çevresi ve geç saatte çalışanlar için 22:00'de kapanan market işe yaramıyor. Biz de kepengi en son indiren olduk. Gece gelen müşterilerimiz için eve teslimatı da aynı saatlere uzattık.</p>
   <h2>Neden fiyat farkı almıyoruz?</h2>
@@ -932,7 +928,7 @@ def build_hakkimizda():
   <p>Telefon: <a href="tel:{C['phone_e164']}">{C['phone_display']}</a> · WhatsApp: <a href="{WA_DEFAULT}" rel="noopener">aynı numara</a> · Adres: {esc(C['address_full'])}</p>
  </div>
  <aside class="side">
-  <div class="card"><h3>Künye</h3><dl class="kv"><dt>İşletme</dt><dd>{esc(C['brand'])}</dd><dt>Tür</dt><dd>Tekel bayii / market</dd><dt>Adres</dt><dd>{esc(C['address_full'])}</dd><dt>Telefon</dt><dd><a href="tel:{C['phone_e164']}">{C['phone_display']}</a></dd><dt>Saatler</dt><dd>Her gün {C['opens']}–{C['closes']}</dd><dt>Google</dt><dd>★ {C['rating']} ({C['review_count']} yorum)</dd></dl></div>
+  <div class="card"><h3>Künye</h3><dl class="kv"><dt>İşletme</dt><dd>{esc(C['brand'])}</dd><dt>Tür</dt><dd>Tekel bayi / market, eve servis</dd><dt>Adres</dt><dd>{esc(C['address_full'])}</dd><dt>Telefon</dt><dd><a href="tel:{C['phone_e164']}">{C['phone_display']}</a></dd><dt>Saatler</dt><dd>Her gün {C['opens']}–{C['closes']}</dd><dt>Google</dt><dd>★ {C['rating']} ({C['review_count']} yorum)</dd></dl></div>
   <div class="map" data-src="{C['maps_embed']}" style="margin-top:14px"></div>
  </aside>
 </div></div></section>
@@ -945,7 +941,7 @@ def build_iletisim():
     title = f"İletişim | {C['phone_display']} | Marin Kartal Karlıktepe"
     desc = f"{C['brand']} iletişim: {C['phone_display']} (telefon ve WhatsApp). {C['address_full']}. Her gün {C['opens']}–{C['closes']}."
     schemas=[breadcrumb([("/","Ana Sayfa"),("/iletisim.html","İletişim")]),{"@context":"https://schema.org","@type":"ContactPage","name":title,"url":C["domain"]+"/iletisim.html","about":{"@id":C["domain"]+"/#business"}}]
-    body = page_head("İletişim", "Tek numara, iki kanal: ara ya da WhatsApp'tan yaz.", [("/","Ana Sayfa"),("/iletisim.html","İletişim")]) + f"""
+    body = page_head("Bize Ulaşın", "Tek numara, iki kanal: arayın ya da WhatsApp'tan yazın.", [("/","Ana Sayfa"),("/iletisim.html","İletişim")]) + f"""
 <section><div class="wrap"><div class="two">
  <div>
   <div class="card" style="margin-bottom:16px"><h3>Sipariş ve bilgi</h3>
@@ -963,7 +959,7 @@ def build_iletisim():
 
 # ─────────────────────────────── BLOG ───────────────────────────────
 def build_blog():
-    title = "Blog | Kartal Tekel, Buz, Mikser ve Mahalle Rehberi | Marin"
+    title = "Blog | Kartal Tekel Bayi, Eve Servis ve Mahalle Rehberi | Marin"
     desc = "Kartal'da gece açık market, eve sipariş rehberi, gel-al fiyatı ve mahalle mahalle teslimat süreleri."
     schemas=[breadcrumb([("/","Ana Sayfa"),("/blog/","Blog")]),{"@context":"https://schema.org","@type":"Blog","name":"Marin Blog","url":C["domain"]+"/blog/","publisher":{"@id":C["domain"]+"/#business"}}]
     posts = "".join(f'<a class="post rv" href="/blog/{p["slug"]}.html"><time datetime="{p["date"]}">{tr_date(p["date"])}</time><h3>{esc(p["title"])}</h3><p>{esc(p["desc"])}</p></a>' for p in BLOG)
@@ -1005,34 +1001,33 @@ def build_tech():
     write("/robots.txt", f"User-agent: *\nAllow: /\n\n# AI arama botları açıkça izinli (AI SEO / GEO)\nUser-agent: GPTBot\nAllow: /\nUser-agent: ChatGPT-User\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: Claude-SearchBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\nUser-agent: Applebot-Extended\nAllow: /\nUser-agent: Bingbot\nAllow: /\n\nSitemap: {C['domain']}/sitemap.xml\n")
     llms = f"""# {C['brand']} (tekelsiparis.com)
 
-> Kartal (İstanbul) Karlıktepe'de her gün {C['opens']}–{C['closes']} açık tekel bayii. Kartal'ın tüm mahallelerine ve Maltepe–Pendik sınırına kendi kuryesiyle buz, tonik, soda, meze, çerez ve market ürünlerini raf fiyatına ("gel-al fiyatına"), ortalama {C['eta']} içinde teslim eder. Alkollü içki ve tütün ürünleri Türkiye mevzuatı (4250 ve 4207 sayılı kanunlar) gereği uzaktan sipariş edilemez ve eve gönderilmez; yalnızca dükkânda 18+ kimlik kontrolüyle satılır. Sipariş telefon veya WhatsApp ile verilir: {C['phone_intl']}.
+> Kartal (İstanbul) Karlıktepe'de her gün {C['opens']}–{C['closes']} açık tekel bayi ve market. Kartal'ın tüm mahallelerine ve Maltepe–Pendik sınırına kendi kuryesiyle buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünlerini eve servis eder; fiyat farkı yok, ortalama {C['eta']}. Sipariş telefon veya WhatsApp ile verilir: {C['phone_intl']}.
 
 ## Temel bilgiler
 
 - [Künye]({C['domain']}/hakkimizda.html): İşletme bilgileri aşağıda özetlenmiştir
 - İşletme adı: {C['brand']}
-- Tür: Tekel bayii (liquor store) ve market; teslimat yalnızca yaş sınırsız ürünler için
-- Alkol/tütün: Sadece dükkânda, 18+ kimlik kontrolü; telefon/WhatsApp/internet siparişi ve eve teslim yapılmaz (yasal zorunluluk)
+- Tür: Tekel bayi (liquor store) ve market, eve servis
 - Adres: {C['address_full']}
 - Telefon ve WhatsApp: {C['phone_intl']} ({C['phone_display']})
 - Çalışma saatleri: Her gün {C['opens']}–{C['closes']} (gece 02:00'ye kadar sipariş)
 - Google puanı: {C['rating']}/5 ({C['review_count']} yorum)
-- Fiyat politikası: Teslimatta raf fiyatı, fiyat farkı yok. Varsa teslimat ücreti sipariş anında söylenir.
+- Fiyat politikası: Eve serviste fiyat farkı yok. Varsa teslimat ücreti sipariş anında söylenir.
 - Ödeme: Kapıda nakit veya kart (POS)
 - Teslimat süresi: Ortalama {C['eta']}; uzak mahallelerde 45 dk'ya kadar
-- Eve gelen ürünler: Torba buz, tonik, soda, gazoz, limon-nane, meze, kuruyemiş, cips, çikolata, dondurma, ekmek-süt-yumurta, temizlik ve kişisel bakım, bebek bezi, çakmak, pil
+- Eve servis ürünleri: Buz, içecekler, meşrubatlar (kola, gazoz, soda, tonik), soğuk meze çeşitleri, kuruyemiş, su ve süt ürünleri, çikolata, dondurma, temel gıda, temizlik ve kişisel bakım, bebek bezi, çakmak, pil
 
 ## Teslimat bölgeleri
-{chr(10).join(f"- [{b[1]} tekel teslimatı]({C['domain']}/bolge/{b[0]}.html): {b[5]}, tahmini {b[2]}, {b[3]}" for b in BOLGELER)}
+{chr(10).join(f"- [{b[1]} Tekel Bayi]({C['domain']}/bolge/{b[0]}.html): {b[5]}, tahmini {b[2]}, {b[3]}" for b in BOLGELER)}
 
 ## Sayfalar
-- [Ana sayfa]({C['domain']}/): Kartal'ın gece 02:00'ye kadar açık tekeli; buz ve mikser gel-al fiyatına kapında
-- [Kartal Tekel]({C['domain']}/kartal-tekel.html): Kartal'da tekel arayanlar için adres, saat, telefon, yol tarifi; "kartal tekel", "gece açık tekel", "en yakın tekel" sorularının cevabı
+- [Ana sayfa]({C['domain']}/): Kartal tekel bayi, eve servis, fiyat farkı yok
+- [Kartal Tekel Bayi]({C['domain']}/kartal-tekel.html): Adres, saat, telefon, yol tarifi; "kartal tekel", "gece açık tekel", "en yakın tekel" sorularının cevabı
 - [Sipariş oluştur]({C['domain']}/siparis.html): Ürün seçip tek dokunuşla WhatsApp siparişi
 - [Ürünler]({C['domain']}/urunler.html): Su, buz, içecek, atıştırmalık, temel gıda, temizlik
-- [Teslimat bölgeleri]({C['domain']}/teslimat-bolgeleri.html): Kartal mahalleleri ve tahmini süreler
+- [Eve servis bölgeleri]({C['domain']}/teslimat-bolgeleri.html): Kartal mahalleleri ve tahmini süreler
 - [SSS]({C['domain']}/sss.html): Teslimat süresi, fiyat, saat, ödeme
-- [Hakkımızda]({C['domain']}/hakkimizda.html): Karlıktepe'nin tekeli
+- [Hakkımızda]({C['domain']}/hakkimizda.html): Kartal Karlıktepe tekel bayi
 - [İletişim]({C['domain']}/iletisim.html): {C['phone_display']}, adres, harita
 
 ## Blog
@@ -1068,8 +1063,8 @@ def build_images():
     d.ellipse([820,-200,1400,380],fill="#1E49C8")
     d.ellipse([-200,420,400,900],fill="#0FB5A8")
     d.rounded_rectangle([60,60,160,160],radius=24,fill="#FFB628"); d.text((110,110),"M",fill="#0B1B45",font=font(64),anchor="mm")
-    d.text((60,200),"Kartal'ın 02:00'ye kadar açık tekeli.",fill="white",font=font(56))
-    d.text((60,270),"Buz & mikser gel-al fiyatına kapında.",fill="#FFB628",font=font(56))
+    d.text((60,200),"Kartal Tekel Bayi. Eve servis.",fill="white",font=font(60))
+    d.text((60,270),"Gel-al fiyatına, 02:00'ye kadar.",fill="#FFB628",font=font(60))
     d.text((60,370),f"Her gün {C['opens']}–{C['closes']}  ·  Ortalama {C['eta']}  ·  Google ★ {C['rating']}",fill="#DCE6FF",font=font(30,False))
     d.rounded_rectangle([60,440,560,520],radius=40,fill="#25D366"); d.text((310,480),f"WhatsApp  {C['phone_display']}",fill="#062b16",font=font(32),anchor="mm")
     d.text((60,560),f"{C['brand']}  ·  {C['address_full']}",fill="#9AA6D6",font=font(22,False))
