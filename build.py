@@ -498,7 +498,7 @@ I_WA = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d=
 I_TEL = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>'
 
 # ─────────────────────────────── ŞABLON ───────────────────────────────
-NAV = [("/","Ana Sayfa"),("/siparis.html","Sipariş Ver"),("/urunler.html","Ürünler"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri"),("/sss.html","SSS"),("/blog/","Blog"),("/hakkimizda.html","Hakkımızda"),("/iletisim.html","İletişim")]
+NAV = [("/","Ana Sayfa"),("/kartal-tekel.html","Kartal Tekel"),("/siparis.html","Sipariş Ver"),("/urunler.html","Ürünler"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri"),("/sss.html","SSS"),("/blog/","Blog"),("/hakkimizda.html","Hakkımızda"),("/iletisim.html","İletişim")]
 
 def local_business(extra=None):
     d = {
@@ -506,7 +506,8 @@ def local_business(extra=None):
       "@type":["LiquorStore","ConvenienceStore","LocalBusiness"],
       "@id": C["domain"]+"/#business",
       "name": C["brand"],
-      "alternateName":["Marin Tekel","Marin Tekel Kartal","Kartal Marin Tekel 2","Karlıktepe Tekel"],
+      "alternateName":["Marin Tekel","Marin Tekel Kartal","Kartal Marin Tekel 2","Karlıktepe Tekel","Kartal Tekel","Kartal Tekel Bayii","Kartal Gece Açık Tekel"],
+      "keywords":"kartal tekel, kartal tekel bayii, karlıktepe tekel, kartal gece açık tekel, kartal en yakın tekel, kartal sahil tekel, kartal merkez tekel, kartal tekel telefon, tekel siparişi kartal, buz siparişi kartal",
       "description": f"{C['brand']}, Kartal Karlıktepe'de her gün {C['opens']}–{C['closes']} açık tekel bayii. Buz, soğuk içecek, soda-tonik, meze ve atıştırmalığı Kartal'ın tüm mahallelerine gel-al fiyatına, ortalama {C['eta']} içinde teslim eder. Yaş sınırlı ürünler yalnızca dükkânda, kimlik kontrolüyle satılır.",
       "url": C["domain"]+"/",
       "telephone": C["phone_e164"],
@@ -663,6 +664,7 @@ def build_index():
     <div><b>{C['eta']}</b>ortalama teslimat</div>
     <div><b>%0</b>fiyat farkı</div>
     <div><b>02:00</b>gece açık tekel</div>
+    <div><b>Kartal</b>tekel bayii</div>
    </div>
   </div>
   <aside class="card ordercard" aria-labelledby="oc">
@@ -713,6 +715,7 @@ def build_index():
 
 <section style="padding-bottom:0">
  <div class="wrap">
+  <div class="sec-head rv"><span class="eyebrow">Kartal tekel</span><h2>Kartal'da tekel arayanların adresi</h2><p>"Kartal tekel", "Karlıktepe tekel", "Kartal gece açık tekel", "en yakın tekel": hepsinin cevabı İnönü Caddesi No:75. Kartal merkeze, metroya ve sahile dakikalar mesafede, her gün 02:00'ye kadar açık tekel bayii. <a href="/kartal-tekel.html">Kartal tekel sayfasına gidin →</a></p></div>
   <div class="card rv" style="border-left:6px solid var(--amber)"><h3 style="margin-bottom:.3em">18+ ürünler hakkında</h3><p style="margin:0;color:var(--ink-2)">Alkollü içki ve tütün ürünleri mevzuat gereği (4250 ve 4207 sayılı kanunlar) telefon, WhatsApp veya internetten sipariş edilemez ve eve gönderilemez. Bu ürünler yalnızca dükkânımızda, 18 yaş üstüne kimlik kontrolüyle satılır. Buz, tonik, soda, meze ve diğer her şeyi kapınıza getiriyoruz.</p></div>
  </div>
 </section>
@@ -807,6 +810,7 @@ def build_bolge(b):
     title = f"{name.split(' (')[0].replace(' Mahallesi','').replace('Yakacık Yeni Mahalle','Yakacık Yeni')} Tekel | Gece Açık, {eta} Kapında | Marin Kartal"
     desc = f"{name.split(' (')[0]} ({ilce}) için gece 02:00'ye kadar açık tekel. Buz, tonik, soda, meze, çerez raf fiyatına ortalama {eta} içinde kapında. {C['phone_display']}"
     qs = [
+      (f"{name}'e en yakın tekel hangisi?", f"{C['brand']}, Karlıktepe İnönü Caddesi No:75'te; {name} bölgesine {eta} mesafede ve her gün {C['closes']}'ye kadar açık. Kartal'da bu saate kadar açık tekel sayısı çok azdır."),
       (f"{name} bölgesine ne kadar sürede geliyorsunuz?", f"{name} için ortalama {eta}. Gece saatlerinde trafik olmadığından genelde daha hızlı."),
       (f"{name}'e alkollü içecek gönderiyor musunuz?", "Hayır. Mevzuat gereği alkollü içki ve tütün ürünleri uzaktan sipariş edilemez, eve gönderilemez; yalnızca dükkânımızda kimlik kontrolüyle satılır. Buz, tonik, soda, meze ve çerez kapınıza gelir."),
       (f"{name}'e gece de teslimat var mı?", f"Evet. Her gün {C['closes']}'ye kadar sipariş alıyor ve teslim ediyoruz."),
@@ -825,6 +829,8 @@ def build_bolge(b):
 <section><div class="wrap"><div class="two">
  <div class="prose">
   <p><strong>{name}</strong> ({ilce}) için en yakın gece açık tekel {C['brand']}. Karlıktepe İnönü Caddesi'ndeki dükkânımızdan torba buz, tonik, soda, gazoz, limon-nane, meze, kuruyemiş, cips ve çikolatayı kendi kuryemizle {name} bölgesine ortalama <strong>{eta}</strong> içinde ulaştırıyoruz. Alkollü içki ve tütün ürünleri mevzuat gereği yalnızca dükkânda, kimlik kontrolüyle satılır; sipariş akışına dahil değildir.</p>
+  <h2>{name} tekel bayii: en yakın gece açık tekel</h2>
+  <p>{name}'de tekel arayanlar için {C['brand']} en pratik seçenek: her gün {C['opens']}–{C['closes']} açık, {name} bölgesine {eta} içinde kurye. Alkollü içki ve tütün ürünleri için dükkâna gelin (18+ kimlik); buz, mikser ve meze için yazın, kapınıza gelsin.</p>
   <h2>{name} için teslimat notu</h2>
   <p>{note} Yakın noktalar: {near}.</p>
   <h2>Nasıl sipariş verilir?</h2>
@@ -847,6 +853,55 @@ def build_bolge(b):
 </div></div></section>
 {faq_block(qs, f"{name} teslimatı hakkında")}
 {cta_band("{name} için buz ve mikser siparişi ver.".replace("{name}",name))}
+"""
+    write(path, head(title, desc, path, schemas) + body + foot())
+
+
+# ─────────────────────────────── KARTAL TEKEL (hedef: "kartal tekel" sorguları) ───────────────────────────────
+def build_kartal_tekel():
+    path="/kartal-tekel.html"
+    title = "Kartal Tekel | Gece 02:00'ye Kadar Açık Tekel Bayii | Marin"
+    desc = f"Kartal'da tekel mi arıyorsunuz? Marin Tekel 2, Karlıktepe İnönü Cd. No:75'te her gün {C['opens']}–{C['closes']} açık tekel bayii. Kartal merkez, sahil ve metroya yakın. {C['phone_display']}"
+    qs = [
+      ("Kartal'da gece açık tekel var mı?", f"Evet. {C['brand']} her gün {C['closes']}'ye kadar açık. Kartal'da 02:00'ye kadar açık tekel bayii sayısı çok azdır; Karlıktepe İnönü Caddesi No:75'teyiz."),
+      ("Kartal'da 24 saat açık tekel var mı?", "Kartal'da 7/24 açık tekel yoktur; mevzuat gereği alkollü içki satışı 22:00–06:00 arasında yapılamaz. Dükkânımız 02:00'ye kadar açıktır ve bu saatlerde buz, mikser, meze, çerez ve market ürünleri satışı ile teslimatı sürer."),
+      ("Kartal'da en yakın tekel nerede?", "Karlıktepe'deyseniz İnönü Caddesi No:75. Kartal merkez, Kordonboyu sahil, Yukarı ve Orta Mahalle'den 5–10 dakika; Soğanlık metro ve Hürriyet'ten 10–15 dakika."),
+      ("Kartal tekel telefon numarası nedir?", f"{C['phone_display']}. Aynı numara WhatsApp'tır; buz, mikser ve meze siparişi için yazabilirsiniz."),
+      ("Tekelden eve sipariş verebilir miyim?", "Buz, tonik, soda, limon, meze, çerez, cips, çikolata ve market ürünleri için evet, raf fiyatına kapınıza geliyor. Alkollü içki ve tütün ürünleri mevzuat gereği (4250 ve 4207 sayılı kanunlar) uzaktan satılamaz ve eve gönderilemez; bunlar için dükkâna gelin, 18+ kimlik kontrolüyle."),
+      ("Kartal sahilden tekele nasıl giderim?", "Kordonboyu'ndan İnönü Caddesi'ne kuzeye çıkın; yürüyerek 10–12 dakika, araçla 4–5 dakika. Yol tarifi için Google Haritalar linkine tıklayın."),
+    ]
+    mahalle_links = "".join(f'<a href="/bolge/{b[0]}.html">{esc(b[1])} tekel<small>{b[2]}</small></a>' for b in BOLGELER)
+    schemas=[breadcrumb([("/","Ana Sayfa"),(path,"Kartal Tekel")]), faq_schema(qs),
+      {"@context":"https://schema.org","@type":"WebPage","name":title,"description":desc,"url":C["domain"]+path,"isPartOf":{"@id":C["domain"]+"/#website"},"about":{"@id":C["domain"]+"/#business"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".page-head h1",".page-head p"]}}]
+    body = page_head("Kartal tekel: Karlıktepe'de, 02:00'ye kadar açık", f"Kartal'da tekel arıyorsanız adres belli: {C['brand']}, İnönü Caddesi No:75. Kartal merkez, sahil ve metroya dakikalar uzaklıkta, her gün {C['opens']}–{C['closes']} açık tekel bayii.", [("/","Ana Sayfa"),(path,"Kartal Tekel")]) + f"""
+<section><div class="wrap"><div class="two">
+ <div class="prose">
+  <p><strong>{C['brand']}</strong>, Kartal'ın Karlıktepe Mahallesi'nde faaliyet gösteren bir tekel bayiidir. Kartal'da tekel arayanların en sık sorduğu üç şey için kısa cevap: <strong>Nerede?</strong> İnönü Caddesi No:75, Kartal merkezin hemen kuzeyi. <strong>Kaça kadar açık?</strong> Her gün {C['closes']}'ye kadar. <strong>Telefon?</strong> <a href="tel:{C['phone_e164']}">{C['phone_display']}</a>.</p>
+  <h2>Kartal'da gece açık tekel</h2>
+  <p>Kartal'da çoğu tekel 23:00–00:00 arasında kapanır. Biz dükkânı {C['closes']}'ye kadar açık tutuyoruz; sahilden dönenler, geç çalışanlar ve hastane çevresinde kalanlar için. Alkollü içki satışı mevzuat gereği 22:00'den sonra yapılmaz; gece saatlerinde buz, tonik, soda, meze, çerez ve market ürünleri satışı ile teslimatı devam eder.</p>
+  <h2>Kartal merkez, sahil ve metroya yakın tekel</h2>
+  <ul>
+   <li><strong>Kartal Meydanı / Kordonboyu sahil:</strong> 4–5 dk araçla, 10–12 dk yürüyerek.</li>
+   <li><strong>Kartal metro (M4):</strong> 5–7 dk araçla.</li>
+   <li><strong>Soğanlık metro:</strong> 8–10 dk araçla.</li>
+   <li><strong>Kartal Belediyesi / Yukarı Mahalle:</strong> 3–5 dk araçla.</li>
+   <li><strong>Dr. Lütfi Kırdar Şehir Hastanesi (Cevizli):</strong> 10–12 dk araçla.</li>
+  </ul>
+  <h2>Kartal tekel bayii: dükkânda ne var?</h2>
+  <p>Geniş soğuk içecek dolabı, her saat torba buz, tonik-soda-gazoz ve mikserler, meze ve çerez rafı, çikolata, dondurma, temel gıda, kişisel bakım ve temizlik. Alkollü içki ve tütün ürünleri 18 yaş üstüne, kimlik kontrolüyle, yalnızca dükkânda satılır.</p>
+  <h2>Tekelden eve ne sipariş edilir?</h2>
+  <p>Buz, mikser, meze, çerez, cips, çikolata, su, ayran, ekmek-süt-yumurta, temizlik ve kişisel bakım ürünleri: hepsi raf fiyatına, ortalama {C['eta']} içinde Kartal'ın her mahallesine. <a href="/siparis.html">Sipariş oluşturun</a> ya da <a href="{WA_DEFAULT}" rel="noopener">WhatsApp'tan yazın</a>. Alkollü içki ve tütün ürünleri mevzuat gereği sipariş akışında yoktur.</p>
+  <h2>Kartal'ın mahallelerine en yakın tekel</h2>
+  <div class="areas">{mahalle_links}</div>
+ </div>
+ <aside class="side"><div class="card">
+  <h3>Marin Tekel 2</h3>
+  <dl class="kv"><dt>Adres</dt><dd>{esc(C['address_full'])}</dd><dt>Saat</dt><dd>Her gün {C['opens']}–{C['closes']}</dd><dt>Telefon</dt><dd><a href="tel:{C['phone_e164']}">{C['phone_display']}</a></dd><dt>Google</dt><dd>★ {C['rating']} ({C['review_count']} yorum)</dd><dt>Durum</dt><dd><span class="status" data-status><i></i><span data-status-text>{C['opens']}–{C['closes']}</span></span></dd></dl>
+  <div style="display:grid;gap:8px;margin-top:16px"><a class="btn btn-ink" href="{C['maps_url']}" rel="noopener" target="_blank" style="justify-content:center">Yol tarifi al ↗</a><a class="btn btn-wa" href="{WA_DEFAULT}" rel="noopener" style="justify-content:center">{I_WA}WhatsApp</a><a class="btn btn-tel" href="tel:{C['phone_e164']}" style="justify-content:center">{I_TEL}{C['phone_display']}</a></div>
+ </div><div class="map" data-src="{C['maps_embed']}" style="margin-top:14px"></div></aside>
+</div></div></section>
+{faq_block(qs, "Kartal tekel hakkında sık sorulanlar")}
+{cta_band("Buz ve mikser için yaz, dükkân için gel.", "Her gün 02:00'ye kadar. Raf fiyatı, fark yok.")}
 """
     write(path, head(title, desc, path, schemas) + body + foot())
 
@@ -942,7 +997,7 @@ def build_404():
 
 # ─────────────────────────────── TEKNİK DOSYALAR ───────────────────────────────
 def build_tech():
-    urls = [("/",1.0,"daily"),("/siparis.html",0.9,"weekly"),("/urunler.html",0.8,"weekly"),("/teslimat-bolgeleri.html",0.8,"weekly"),("/sss.html",0.7,"monthly"),("/hakkimizda.html",0.6,"monthly"),("/iletisim.html",0.7,"monthly"),("/blog/",0.6,"weekly")]
+    urls = [("/",1.0,"daily"),("/kartal-tekel.html",0.9,"weekly"),("/siparis.html",0.9,"weekly"),("/urunler.html",0.8,"weekly"),("/teslimat-bolgeleri.html",0.8,"weekly"),("/sss.html",0.7,"monthly"),("/hakkimizda.html",0.6,"monthly"),("/iletisim.html",0.7,"monthly"),("/blog/",0.6,"weekly")]
     urls += [(f"/bolge/{b[0]}.html",0.7,"monthly") for b in BOLGELER]
     urls += [(f"/blog/{p['slug']}.html",0.6,"monthly") for p in BLOG]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{C['domain']}{u}</loc><lastmod>{TODAY}</lastmod><changefreq>{cf}</changefreq><priority>{p}</priority></url>\n" for u,p,cf in urls) + "</urlset>\n"
@@ -972,6 +1027,7 @@ def build_tech():
 
 ## Sayfalar
 - [Ana sayfa]({C['domain']}/): Kartal'ın gece 02:00'ye kadar açık tekeli; buz ve mikser gel-al fiyatına kapında
+- [Kartal Tekel]({C['domain']}/kartal-tekel.html): Kartal'da tekel arayanlar için adres, saat, telefon, yol tarifi; "kartal tekel", "gece açık tekel", "en yakın tekel" sorularının cevabı
 - [Sipariş oluştur]({C['domain']}/siparis.html): Ürün seçip tek dokunuşla WhatsApp siparişi
 - [Ürünler]({C['domain']}/urunler.html): Su, buz, içecek, atıştırmalık, temel gıda, temizlik
 - [Teslimat bölgeleri]({C['domain']}/teslimat-bolgeleri.html): Kartal mahalleleri ve tahmini süreler
@@ -1029,7 +1085,7 @@ def build_images():
 if __name__ == "__main__":
     os.makedirs(os.path.join(OUT,"assets"),exist_ok=True)
     build_tech(); build_images()
-    build_index(); build_siparis(); build_urunler(); build_bolgeler()
+    build_index(); build_kartal_tekel(); build_siparis(); build_urunler(); build_bolgeler()
     for b in BOLGELER: build_bolge(b)
     build_sss(); build_hakkimizda(); build_iletisim(); build_blog(); build_404()
     n = sum(len(f) for _,_,f in os.walk(OUT))
