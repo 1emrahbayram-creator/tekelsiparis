@@ -11,11 +11,40 @@ cd site && python3 -m http.server 8765   # yerelde önizleme: http://localhost:8
 
 İşletme bilgilerini değiştirmek için `build.py` içindeki `CONFIG` sözlüğünü düzenleyin (telefon, saat, adres, koordinat, Instagram, teslimat süresi) ve yeniden üretin.
 
-## Yayınlama (önerilen sıra)
+## Yayın: GitHub Pages (kurulu)
 
-1. **Cloudflare Pages** (ücretsiz, en hızlı): yeni proje → "Upload assets" → `site/` klasörünü sürükleyin. `_headers` ve `_redirects` otomatik tanınır. Alan adı: tekelsiparis.com'u Cloudflare DNS'e alın, Pages'e bağlayın. HTTPS otomatik.
-2. Alternatif: Netlify (aynı şekilde drag-drop) veya cPanel/klasik hosting (`site/` içeriğini `public_html`'e yükleyin; `.htaccess` HTTPS yönlendirmesi, 404 ve önbelleği halleder).
-3. `www` → kök alan adına 301 yönlendirin (`.htaccess` içinde hazır; Cloudflare'de Bulk Redirect ile).
+- Repo: https://github.com/1emrahbayram-creator/tekelsiparis
+- Her `git push` (main) → `.github/workflows/deploy.yml` çalışır → `python3 build.py` → `site/` GitHub Pages'e çıkar. `site/` klasörü git'e girmez (`.gitignore`).
+- Pages ayarı: build type "GitHub Actions", özel alan adı `tekelsiparis.com` (API ile tanımlandı). `site/CNAME` ve `site/.nojekyll` build'de otomatik üretilir.
+- Not: `_headers` / `_redirects` / `.htaccess` GitHub Pages'te çalışmaz (Cloudflare/Netlify/cPanel içindir). Güvenlik başlıkları ve Brotli isterseniz ileride alan adını Cloudflare'e taşıyıp Pages'i Cloudflare Pages'e çevirmek yeterli; build.py değişmez.
+
+### Alan adını bağlama (GoDaddy DNS) — tek seferlik, elle
+
+GoDaddy → My Products → tekelsiparis.com → **DNS** → mevcut "Parked" A kayıtlarını silip şunları ekleyin:
+
+| Tür | Ad (Host) | Değer | TTL |
+|---|---|---|---|
+| A | @ | 185.199.108.153 | 600 |
+| A | @ | 185.199.109.153 | 600 |
+| A | @ | 185.199.110.153 | 600 |
+| A | @ | 185.199.111.153 | 600 |
+| CNAME | www | 1emrahbayram-creator.github.io | 600 |
+
+(İsteğe bağlı IPv6: AAAA @ → 2606:50c0:8000::153, 2606:50c0:8001::153, 2606:50c0:8002::153, 2606:50c0:8003::153.) GoDaddy'nin eklediği "Domain Connect / Parked" kayıtlarını ve varsa `www` için eski CNAME'i kaldırın.
+
+Sonra (DNS yayılınca, 10 dk–24 saat):
+
+```bash
+gh api repos/1emrahbayram-creator/tekelsiparis/pages/health -q '{domain:.domain.host,https:.domain.has_valid_https?}' 
+```
+
+Sertifika hazır olunca HTTPS'i zorunlu yapın:
+
+```bash
+gh api -X PUT repos/1emrahbayram-creator/tekelsiparis/pages -F https_enforced=true
+```
+
+Kontrol: `curl -I https://tekelsiparis.com/` → `HTTP/2 200`, `curl -I http://www.tekelsiparis.com/` → `301 → https://tekelsiparis.com/`.
 
 ## Yayın sonrası ilk 24 saat (SEO)
 
