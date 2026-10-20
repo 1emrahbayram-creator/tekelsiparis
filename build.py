@@ -220,11 +220,11 @@ p{margin:0 0 1em}
 
 /* header */
 .top{position:sticky;top:0;z-index:50;background:rgba(247,243,234,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;height:68px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--font-d);font-weight:800;font-size:1.15rem;letter-spacing:-.02em;white-space:nowrap;flex:none}
 .logo .mark{width:40px;height:40px;border-radius:11px;background:var(--navy);display:grid;place-items:center;color:var(--amber);font-size:1.1rem;box-shadow:inset 0 -3px 0 rgba(0,0,0,.25)}
 .logo small{display:block;font-family:var(--font-b);font-weight:600;font-size:.68rem;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase;line-height:1}
-nav.main ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav.main ul{display:flex;gap:0;list-style:none;margin:0;padding:0}
 nav.main a{text-decoration:none;color:var(--ink-2);font-weight:600;font-size:.88rem;padding:.55em .62em;border-radius:999px;white-space:nowrap}
 nav.main a:hover,nav.main a[aria-current]{background:var(--paper-2);color:var(--ink)}
 .top .cta{display:flex;gap:8px;align-items:center}
@@ -558,7 +558,7 @@ def head(title, desc, path, schemas, og_type="website", noindex=False):
 <a class="skip" href="#main">İçeriğe geç</a>
 <header class="top">
  <div class="wrap">
-  <a class="logo" href="/" title="Ana sayfa"><span class="mark">M</span><span>{esc(C['brand'])}<small>Kartal Tekel Bayi · Eve Servis</small></span></a>
+  <a class="logo" href="/" title="Ana sayfa"><span class="mark">M</span><span>{esc(C['brand'])}<small>Kartal · Eve Servis</small></span></a>
   <nav class="main" aria-label="Ana menü"><ul>{''.join(f'<li><a href="{u}"{" aria-current=page" if (u==path or (u!="/" and path.startswith(u.replace(".html","")) and u.endswith("/"))) else ""}>{n}</a></li>' for u,n in NAV)}</ul></nav>
   <div class="cta">
    <a class="btn btn-tel" href="tel:{C['phone_e164']}">{I_TEL}{C['phone_display']}</a>
