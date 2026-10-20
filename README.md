@@ -67,6 +67,16 @@ Kontrol: `curl -I https://tekelsiparis.com/` → `HTTP/2 200`, `curl -I http://w
 
 Türkiye'de **4250 sayılı Kanun** alkollü içkilerin her türlü reklamını ve uzaktan (internet/telefon) satışını; **4207 sayılı Kanun** tütün ürünlerinin reklam ve tanıtımını yasaklar. "Mesafeli satış" telefon ve WhatsApp siparişini de kapsar; gel-al olsa bile uzaktan sipariş alınması yasağa girer. Bu nedenle site işletmeyi **tekel bayii** olarak konumlandırır (bu yasaldır: işletme türü ve adı), "kartal tekel / gece açık tekel" aramalarını hedefler, ama alkol/tütün ürünlerini **listelemez, fiyatlamaz, görselini koymaz, sipariş akışına almaz**. Teslimat akışı yalnızca buz, mikser, meze, çerez ve market ürünleri içindir; her sayfada "18+ ürünler yalnızca dükkânda, kimlikle" notu vardır. Bu notlar hem yasal koruma hem de Google/Meta reklam politikalarına uyum sağlar. Siteye, Google İşletme Profili'ne veya Instagram'a alkol markası, fiyatı veya görseli eklemeyin. Kurye, yaş sınırlı ürünleri hiçbir koşulda teslimata dahil etmemelidir.
 
+## Görseller
+
+`assets-src/ic.jpg` (dükkân içi, raflar) hero arka planı ve OG görseli olarak, `assets-src/vitrin.jpg` Hakkımızda sayfasında kullanılır. Daha iyi bir fotoğraf çekince aynı adla bu klasöre koyup `python3 build.py` çalıştırın; boyutlandırma ve sıkıştırma otomatiktir.
+
+## İşletme kararları (2026-10-20)
+
+- Sitede teslimat süresi yazılmaz (aksaklıkta kötü yorum riski). `CONFIG["eta"]` boş bırakıldı.
+- Açılış saati metinlerde yazılmaz; yalnızca "gece 02:00'ye kadar". Schema'daki `opens` değeri Google İşletme Profili ile aynı (08:00); gerçek sipariş başlangıç saati öğrenilince `CONFIG["opens"]` güncellenmeli.
+- "Ürün seçerek sipariş oluştur" kaldırıldı; sipariş yalnızca telefon/WhatsApp. `siparis.html` ana sayfaya yönlendirir.
+
 ## Teknik özet
 
 - 8 ana sayfa + 22 mahalle sayfası + 4 blog yazısı + 404.
