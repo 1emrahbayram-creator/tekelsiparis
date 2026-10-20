@@ -225,7 +225,7 @@ p{margin:0 0 1em}
 .logo .mark{width:40px;height:40px;border-radius:11px;background:var(--navy);display:grid;place-items:center;color:var(--amber);font-size:1.1rem;box-shadow:inset 0 -3px 0 rgba(0,0,0,.25)}
 .logo small{display:block;font-family:var(--font-b);font-weight:600;font-size:.68rem;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase;line-height:1}
 nav.main ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
-nav.main a{text-decoration:none;color:var(--ink-2);font-weight:600;font-size:.9rem;padding:.55em .7em;border-radius:999px;white-space:nowrap}
+nav.main a{text-decoration:none;color:var(--ink-2);font-weight:600;font-size:.88rem;padding:.55em .62em;border-radius:999px;white-space:nowrap}
 nav.main a:hover,nav.main a[aria-current]{background:var(--paper-2);color:var(--ink)}
 .top .cta{display:flex;gap:8px;align-items:center}
 .status{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;font-weight:700;padding:.4em .8em;border-radius:999px;background:var(--paper-2);color:var(--ink-2);white-space:nowrap}
@@ -484,7 +484,7 @@ I_WA = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d=
 I_TEL = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>'
 
 # ─────────────────────────────── ŞABLON ───────────────────────────────
-NAV = [("/","Ana Sayfa"),("/kartal-tekel.html","Kartal Tekel Bayi"),(WA_DEFAULT,"Sipariş Ver"),("/urunler.html","Ürünler"),("/teslimat-bolgeleri.html","Eve Servis Bölgeleri"),("/sss.html","S.S.S"),("/blog/","Blog"),("/hakkimizda.html","Hakkımızda"),("/iletisim.html","İletişim")]
+NAV = [("/","Ana Sayfa"),("/kartal-tekel.html","Tekel Bayi"),(WA_DEFAULT,"Sipariş Ver"),("/urunler.html","Ürünler"),("/teslimat-bolgeleri.html","Bölgeler"),("/sss.html","S.S.S"),("/blog/","Blog"),("/hakkimizda.html","Hakkımızda"),("/iletisim.html","İletişim")]
 
 def local_business(extra=None):
     d = {
@@ -561,7 +561,6 @@ def head(title, desc, path, schemas, og_type="website", noindex=False):
   <a class="logo" href="/" title="Ana sayfa"><span class="mark">M</span><span>{esc(C['brand'])}<small>Kartal Tekel Bayi · Eve Servis</small></span></a>
   <nav class="main" aria-label="Ana menü"><ul>{''.join(f'<li><a href="{u}"{" aria-current=page" if (u==path or (u!="/" and path.startswith(u.replace(".html","")) and u.endswith("/"))) else ""}>{n}</a></li>' for u,n in NAV)}</ul></nav>
   <div class="cta">
-   <span class="status" data-status><i></i><span data-status-text>02:00'ye kadar</span></span>
    <a class="btn btn-tel" href="tel:{C['phone_e164']}">{I_TEL}{C['phone_display']}</a>
    <button class="burger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
   </div>
