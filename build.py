@@ -33,6 +33,7 @@ CONFIG = {
     "instagram": "",  # varsa: https://instagram.com/...
     "eta": "",  # Teslimat süresi sitede yazılmaz (işletme kararı)
     "founded": "2019",
+    "ga_id": "G-5XD2DM4VK2",  # Google Analytics 4
 }
 C = CONFIG
 TODAY = datetime.date.today().isoformat()
@@ -442,6 +443,10 @@ JS = r"""
   });}
   paint();setInterval(paint,60000);
 
+  // GA4 dönüşüm olayları: telefon ve WhatsApp tıklamaları
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"],a[href*="wa.me"]');if(!a||typeof gtag!=='function')return;
+    var wa=a.href.indexOf('wa.me')>-1;gtag('event',wa?'whatsapp_click':'call_click',{event_category:'siparis',event_label:location.pathname,transport_type:'beacon'});});
+
   // Mobil menü
   var b=document.querySelector('.burger'),n=document.querySelector('nav.main');
   if(b&&n){b.addEventListener('click',function(){var open=n.classList.toggle('open');b.setAttribute('aria-expanded',open);});}
@@ -552,6 +557,9 @@ def head(title, desc, path, schemas, og_type="website", noindex=False):
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/styles.css">
 <script>document.documentElement.classList.add("js")</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={C['ga_id']}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{C['ga_id']}');</script>
 {jsonld(*schemas)}
 </head>
 <body>
