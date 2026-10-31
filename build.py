@@ -1008,6 +1008,7 @@ def build_tech():
     write("/_redirects", "/bolge /teslimat-bolgeleri.html 301\n/blog /blog/ 301\n/index.html / 301\n")
     write("/.htaccess", "RewriteEngine On\nRewriteCond %{HTTPS} off\nRewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]\nRewriteCond %{HTTP_HOST} ^www\\.(.*)$ [NC]\nRewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]\nErrorDocument 404 /404.html\nAddDefaultCharset UTF-8\n<IfModule mod_deflate.c>\nAddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/plain\n</IfModule>\n<IfModule mod_expires.c>\nExpiresActive On\nExpiresByType text/css \"access plus 1 year\"\nExpiresByType application/javascript \"access plus 1 year\"\nExpiresByType image/svg+xml \"access plus 1 year\"\nExpiresByType image/png \"access plus 1 year\"\nExpiresByType text/html \"access plus 0 seconds\"\n</IfModule>\n<IfModule mod_headers.c>\nHeader set X-Content-Type-Options nosniff\nHeader set Referrer-Policy strict-origin-when-cross-origin\nHeader set Strict-Transport-Security \"max-age=31536000; includeSubDomains\"\n</IfModule>\n")
     write("/.nojekyll", "")
+    write("/googleae7c52bc642ddd6b.html", "google-site-verification: googleae7c52bc642ddd6b.html")  # Search Console doğrulama
     write("/CNAME", C["domain"].replace("https://",""))
     write("/assets/styles.css", CSS.strip()+"\n")
     write("/assets/main.js", JS.strip()+"\n")
