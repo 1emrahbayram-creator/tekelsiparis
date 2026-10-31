@@ -546,6 +546,7 @@ def head(title, desc, path, schemas, og_type="website", noindex=False):
 <link rel="canonical" href="{url}">
 {'<meta name="robots" content="noindex,follow">' if noindex else '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">'}
 <meta name="theme-color" content="#0B1B45">
+<meta name="msvalidate.01" content="C0CC366C25B19A28FE8F3C63669D9192">
 <meta name="geo.region" content="TR-34"><meta name="geo.placename" content="Kartal, İstanbul"><meta name="geo.position" content="{C['lat']};{C['lng']}"><meta name="ICBM" content="{C['lat']}, {C['lng']}">
 <meta property="og:locale" content="tr_TR"><meta property="og:type" content="{og_type}"><meta property="og:site_name" content="{esc(C['brand'])} · tekelsiparis.com">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}">
