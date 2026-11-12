@@ -49,29 +49,24 @@ WA_DEFAULT = wa("Merhaba Marin, sipariş vermek istiyorum.\nAdres: \nÜrünler: 
 # ─────────────────────────────── BÖLGELER ───────────────────────────────
 # (slug, ad, tahmini süre, yakın yerler, özgün not, ilçe)
 BOLGELER = [
- ("karliktepe","Karlıktepe","10–20 dk","İnönü Caddesi ve Tecerdağı Caddesi çevresi","Dükkânımız tam burada, İnönü Caddesi üzerinde. Karlıktepe içinde siparişler çoğu zaman 15 dakikayı bulmadan kapıda.","Kartal"),
- ("yukari","Yukarı Mahalle","15–25 dk","Kartal Belediyesi ve Kartal Çarşı çevresi","Kartal'ın en işlek merkezine iki adım mesafedeyiz. Çarşı trafiğine takılmadan ara sokaklardan ulaşırız.","Kartal"),
- ("orta","Orta Mahalle","15–25 dk","Kartal Meydanı ve Üsküdar Caddesi hattı","Meydan çevresindeki apartman ve sitelere düzenli servisimiz var; akşam saatlerinde yoğun talep gelen bölgelerimizden.","Kartal"),
- ("kordonboyu","Kordonboyu","15–30 dk","Kartal sahili, iskele ve Kartal Meydanı","Sahil kenarında oturan ya da iskele civarında akşam geçirenlerin en çok aradığı adres biziz: içecek, buz ve atıştırmalık tek seferde.","Kartal"),
- ("cumhuriyet","Cumhuriyet Mahallesi","15–25 dk","E-5 kuzeyi, Ankara Caddesi çevresi","E-5'in kuzey tarafındaki sitelere düzenli gidiyoruz; gece geç saatlerde bile servis devam eder.","Kartal"),
- ("hurriyet","Hürriyet Mahallesi","15–25 dk","E-5 ile Yakacık Caddesi arası","Yoğun konut dokusu nedeniyle aynı sokağa birden fazla teslimatı birleştirir, süreyi kısa tutarız.","Kartal"),
- ("petrol-is","Petrol-İş Mahallesi","15–25 dk","Petrol-İş Caddesi çevresi","Karlıktepe'ye komşu mahalle; motorlu kuryeyle çoğu adrese 20 dakikanın altında ulaşırız.","Kartal"),
- ("esentepe","Esentepe","15–30 dk","Anadolu Adliyesi ve Ankara Caddesi çevresi","Adliye çevresindeki ofisler için gündüz, siteler için akşam teslimatı yapıyoruz.","Kartal"),
- ("cavusoglu","Çavuşoğlu Mahallesi","15–30 dk","Yakacık Caddesi çevresi","Yakacık yönüne giden ana hat üzerinde olduğu için rotamızın doğal bir parçası.","Kartal"),
- ("yali","Yalı Mahallesi","20–30 dk","Kartal sahil yolu, Dragos yönü","Sahil siteleri ve yazlık havasındaki Dragos yamaçlarına düzenli servis.","Kartal"),
- ("yunus","Yunus Mahallesi","20–30 dk","Yunus sahili ve Cevizli yönü","Sahil kenarı sitelere akşam saatlerinde hızlı servis; buz ve soğuk içecek talebi burada yüksek.","Kartal"),
- ("atalar","Atalar","20–30 dk","Atalar Çarşı ve Atalar sahili","Atalar'ın çarşı ve sahil tarafına tek rotada ulaşıyoruz.","Kartal"),
- ("topselvi","Topselvi","15–30 dk","Topselvi Caddesi, Soğanlık metro yakını","Metro çevresindeki yeni siteler için en sık aranan adreslerden biriyiz.","Kartal"),
- ("gumuspinar","Gümüşpınar","20–30 dk","Yakacık'a geçiş hattı","Yakacık rotasında olduğu için siparişleri birleştirip hızla ulaşıyoruz.","Kartal"),
- ("ugur-mumcu","Uğur Mumcu Mahallesi","20–35 dk","Aydos Ormanı etekleri, Samandıra sınırı","Kartal'ın kuzey ucunda olmasına rağmen akşam servisi düzenli devam eder.","Kartal"),
- ("soganlik","Soğanlık","15–30 dk","Soğanlık metro (M4) ve Soğanlık Caddesi","Metro çıkışı çevresindeki apartmanlara sık gittiğimiz için adresleri iyi biliriz.","Kartal"),
- ("cevizli","Cevizli","20–40 dk","Hastane metro, Dr. Lütfi Kırdar Şehir Hastanesi, Maltepe sınırı","Hastane çevresinde refakatçiler için gece de servis veriyoruz.","Kartal"),
- ("orhantepe","Orhantepe","20–35 dk","Dragos sahili ve Orhantepe sırtları","Dragos'un yokuşlarına motorlu kuryeyle sorunsuz çıkıyoruz.","Kartal"),
- ("yakacik-carsi","Yakacık Çarşı","20–35 dk","Yakacık meydanı ve Aydos Ormanı girişi","Yakacık'ın tarihi çarşısı ve çevresindeki konutlara akşam servisi.","Kartal"),
- ("yakacik-yeni","Yakacık Yeni Mahalle","20–35 dk","Yakacık–Adnan Kahveci metro, E-5 hattı","E-5 kenarındaki siteler ve metro çevresi için sık gittiğimiz bir rota.","Kartal"),
- ("maltepe","Maltepe (Cevizli–Altayçeşme hattı)","30–45 dk","Maltepe sahil, Altayçeşme, Cevizli sınırı","Kartal sınırına yakın Maltepe adreslerine de gidiyoruz; sipariş öncesi adresinizi WhatsApp'tan teyit ediyoruz.","Maltepe"),
- ("pendik-kaynarca","Pendik Kaynarca","30–45 dk","Kaynarca metro ve Pendik sınırı","Kartal–Pendik sınırındaki Kaynarca adreslerine akşam saatlerinde servis.","Pendik"),
+ ("karliktepe","Karlıktepe","İnönü Caddesi ve Tecerdağı Caddesi çevresi","Dükkânımız tam burada, İnönü Caddesi üzerinde. Karlıktepe içindeki adreslere en hızlı ulaştığımız yer burası.","Kartal"),
+ ("esentepe","Esentepe","Anadolu Adliyesi ve Ankara Caddesi çevresi","Adliye çevresindeki ofisler için gündüz, siteler için akşam servisi yapıyoruz.","Kartal"),
+ ("petrol-is","Petrol-İş Mahallesi","Petrol-İş Caddesi çevresi","Karlıktepe'ye komşu mahalle; motorlu kuryeyle kısa sürede ulaştığımız bölgelerden.","Kartal"),
+ ("yukari","Yukarı Mahalle","Kartal Belediyesi ve Kartal Çarşı çevresi","Kartal'ın en işlek merkezine iki adım mesafedeyiz. Çarşı trafiğine takılmadan ara sokaklardan ulaşırız.","Kartal"),
+ ("kordonboyu","Kordonboyu","Kartal sahili, iskele ve Kartal Meydanı","Sahil kenarında oturanların ve iskele civarında akşam geçirenlerin en çok aradığı adres biziz.","Kartal"),
+ ("atalar","Atalar","Atalar Çarşı ve Atalar sahili","Atalar'ın çarşı ve sahil tarafına tek rotada ulaşıyoruz.","Kartal"),
+ ("rahmanlar","Rahmanlar","Rahmanlar Caddesi ve çevresi","Düzenli servis verdiğimiz mahallelerden; akşam saatlerinde de rotamızın parçası.","Kartal"),
+ ("cavusoglu","Çavuşoğlu Mahallesi","Yakacık Caddesi çevresi","Yakacık yönüne giden ana hat üzerinde olduğu için rotamızın doğal bir parçası.","Kartal"),
+ ("cevizli","Cevizli","Hastane metro ve Dr. Lütfi Kırdar Şehir Hastanesi çevresi","Hastane çevresinde refakatçiler için gece de servis veriyoruz.","Kartal"),
+ ("orhantepe","Orhantepe","Dragos sahili ve Orhantepe sırtları","Dragos'un yokuşlarına motorlu kuryeyle sorunsuz çıkıyoruz.","Kartal"),
+ ("soganlik","Soğanlık","Soğanlık metro (M4) ve Soğanlık Caddesi","Metro çıkışı çevresindeki apartmanlara sık gittiğimiz için adresleri iyi biliriz.","Kartal"),
 ]
+
+# Kaldırılan eski bölge sayfaları → bölgeler sayfasına yönlendirilir
+ESKI_BOLGELER = ["orta","cumhuriyet","hurriyet","yali","yunus","topselvi","gumuspinar","ugur-mumcu","yakacik-carsi","yakacik-yeni","maltepe","pendik-kaynarca"]
+
+# Metinlerde kullanılan kısa mahalle listesi
+MAHALLE_ADLARI = ", ".join(b[1] for b in BOLGELER)
 
 # ─────────────────────────────── ÜRÜN KATEGORİLERİ ───────────────────────────────
 KATEGORILER = [
@@ -93,7 +88,7 @@ SSS = [
  ("Eve servis ne kadar sürer?", "Siparişinizi en kısa sürede teslim ediyoruz. Yoğunluğa göre tahmini süreyi sipariş alırken söyleriz."),
  ("Eve serviste fiyat farkı var mı?", "Yok. Kapınıza gelen ürünün fiyatı dükkândaki fiyatla aynıdır. Varsa teslimat ücreti sipariş sırasında söylenir."),
  ("Çalışma saatleriniz nedir?", "Her gün gece 02:00'ye kadar açığız ve sipariş alıyoruz."),
- ("Hangi bölgelere eve servis var?", "Kartal'ın tüm mahallelerine: Karlıktepe, Yukarı, Orta, Kordonboyu, Cumhuriyet, Hürriyet, Petrol-İş, Esentepe, Çavuşoğlu, Yalı, Yunus, Atalar, Topselvi, Gümüşpınar, Uğur Mumcu, Soğanlık, Cevizli, Orhantepe, Yakacık. Maltepe'nin Cevizli tarafına ve Pendik Kaynarca'ya da gidiyoruz."),
+ ("Hangi mahallelere eve servis var?", "Kartal'ın şu 11 mahallesine servis veriyoruz: Karlıktepe, Esentepe, Petrol-İş, Yukarı Mahalle, Kordonboyu, Atalar, Rahmanlar, Çavuşoğlu, Cevizli, Orhantepe ve Soğanlık. Bu mahallelerin dışına paket servisimiz bulunmuyor; diğer adreslerden gel-al olarak dükkânımızdan alabilirsiniz."),
  ("Minimum sipariş tutarı var mı?", "Küçük siparişleri de alıyoruz. Bölgeye göre minimum tutar değişebilir; WhatsApp'tan adresinizi yazın, hemen söyleyelim."),
  ("Ödeme nasıl yapılıyor?", "Kapıda kart ya da nakit. Kurye POS cihazı taşır."),
  ("Listede olmayan bir ürün istesem?", "Sorun. Varsa getiririz, yoksa bulup getiririz. Müşterilerimizin Google yorumlarında en çok övdüğü şey bu."),
@@ -120,7 +115,7 @@ BLOG = [
 <li><strong>WhatsApp yazın:</strong> aynı numaraya adresinizi ve istediklerinizi tek mesajda gönderin.</li>
 </ol>
 <h2>Gece hangi bölgelere gidiyoruz?</h2>
-<p>Gündüz hangi mahalleye gidiyorsak gece de aynı: Karlıktepe, Kordonboyu, Yukarı, Orta, Hürriyet, Cumhuriyet, Soğanlık, Cevizli, Yakacık ve diğer tüm Kartal mahalleleri. Gece trafiği olmadığı için teslimat çoğu zaman gündüzden bile hızlı.</p>
+<p>Gündüz hangi mahalleye gidiyorsak gece de aynı: Karlıktepe, Esentepe, Petrol-İş, Yukarı Mahalle, Kordonboyu, Atalar, Rahmanlar, Çavuşoğlu, Cevizli, Orhantepe ve Soğanlık. Bu 11 mahalle dışına paket servisimiz yok; gece trafiği olmadığı için teslimat çoğu zaman gündüzden bile hızlı.</p>
 <h2>Gece en çok ne isteniyor?</h2>
 <p>Sırasıyla: torba buz, soğuk meşrubat, soğuk meze, kuruyemiş ve cips, çikolata, çakmak. Hepsi stokta, fiyat farkı yok.</p>
 
@@ -499,7 +494,7 @@ def local_business(extra=None):
       "name": C["brand"],
       "alternateName":["Marin Tekel","Marin Tekel Kartal","Kartal Marin Tekel 2","Karlıktepe Tekel","Kartal Tekel","Kartal Tekel Bayii","Kartal Gece Açık Tekel"],
       "keywords":"kartal tekel, kartal tekel bayii, karlıktepe tekel, kartal gece açık tekel, kartal en yakın tekel, kartal sahil tekel, kartal merkez tekel, kartal tekel telefon, tekel siparişi kartal, buz siparişi kartal",
-      "description": f"{C['brand']}, Kartal Karlıktepe'de her gün gece 02:00'ye kadar açık tekel bayi ve market. Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünlerini Kartal'ın tüm mahallelerine eve servis eder. Fiyat farkı yok.",
+      "description": f"{C['brand']}, Kartal Karlıktepe'de her gün gece 02:00'ye kadar açık tekel bayi ve market. Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünlerini Kartal'ın 11 mahallesine (Karlıktepe, Esentepe, Petrol-İş, Yukarı Mahalle, Kordonboyu, Atalar, Rahmanlar, Çavuşoğlu, Cevizli, Orhantepe, Soğanlık) paket servis yapar. Fiyat farkı yok.",
       "url": C["domain"]+"/",
       "telephone": C["phone_e164"],
       "image": C["domain"]+"/assets/og.png",
@@ -513,7 +508,7 @@ def local_business(extra=None):
       "hasMap": C["maps_url"],
       "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":C["opens"],"closes":C["closes"]}],
       "aggregateRating":{"@type":"AggregateRating","ratingValue":C["rating"],"reviewCount":C["review_count"],"bestRating":"5"},
-      "areaServed":[{"@type":"Place","name":f"{b[1]}, {b[5]}, İstanbul"} for b in BOLGELER],
+      "areaServed":[{"@type":"Place","name":f"{b[1]}, {b[4]}, İstanbul"} for b in BOLGELER],
       "hasOfferCatalog":{"@type":"OfferCatalog","name":"Ürün kategorileri","itemListElement":[{"@type":"OfferCatalog","name":k[0]} for k in KATEGORILER]},
       "potentialAction":[{"@type":"OrderAction","target":{"@type":"EntryPoint","urlTemplate":WA_DEFAULT,"actionPlatform":["http://schema.org/MobileWebPlatform","http://schema.org/DesktopWebPlatform"]},"deliveryMethod":"http://purl.org/goodrelations/v1#DeliveryModeOwnFleet"},
                          {"@type":"CommunicateAction","target":{"@type":"EntryPoint","urlTemplate":"tel:"+C["phone_e164"]}}],
@@ -629,7 +624,7 @@ def write(path, content):
 # ─────────────────────────────── ANA SAYFA ───────────────────────────────
 def build_index():
     title = "Kartal Tekel Bayi | Eve Servis | Açık Tekel | Marin Tekel 2"
-    desc = f"Kartal tekel bayi ve market. Buz, içecek, meşrubat, soğuk meze, kuruyemiş eve servis. Her gün gece 02:00'ye kadar, fiyat farkı yok. Size en yakın tekel: {C['phone_display']}"
+    desc = f"Kartal tekel bayi. Karlıktepe, Esentepe, Kordonboyu, Petrol-İş, Atalar ve Soğanlık'a eve servis. Her gün gece 02:00'ye kadar, fiyat farkı yok. {C['phone_display']}"
     schemas = [
       local_business(),
       {"@context":"https://schema.org","@type":"WebSite","@id":C["domain"]+"/#website","url":C["domain"]+"/","name":"tekelsiparis.com","publisher":{"@id":C["domain"]+"/#business"},"inLanguage":"tr"},
@@ -648,14 +643,14 @@ def build_index():
   <div>
    <span class="eyebrow">Kartal Tekel Bayi · Eve Servis · Her gün 02:00'ye kadar</span>
    <h1>Kartal Tekel Bayi. <em>Eve servis</em>, gel-al fiyatına.</h1>
-   <p class="lead">Kartal'da size en yakın tekel market. Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünleri için bir telefon ya da WhatsApp mesajı yeterli. Siparişiniz en kısa sürede evinizde ya da iş yerinizde.</p>
+   <p class="lead">Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünleri için bir telefon ya da WhatsApp mesajı yeterli. <strong>Karlıktepe, Esentepe, Petrol-İş, Yukarı Mahalle, Kordonboyu, Atalar, Rahmanlar, Çavuşoğlu, Cevizli, Orhantepe ve Soğanlık</strong> mahallelerine paket servis.</p>
    <div class="actions">
     <a class="btn btn-wa" href="{WA_DEFAULT}" rel="noopener">{I_WA}WhatsApp'tan Sipariş Ver</a>
     <a class="btn btn-ghost" href="tel:{C['phone_e164']}">{I_TEL}{C['phone_display']}</a>
    </div>
    <div class="proof">
     <div><b><span class="stars">★★★★★</span> {C['rating']}</b>Google yorumları</div>
-    <div><b>7 gün</b>eve servis</div>
+    <div><b>11</b>servis mahallesi</div>
     <div><b>%0</b>fiyat farkı</div>
     <div><b>02:00</b>gece açık tekel</div>
    </div>
@@ -713,9 +708,9 @@ def build_index():
 
 <section>
  <div class="wrap">
-  <div class="sec-head rv"><span class="eyebrow">Eve servis</span><h2>Eve Servis İmkanımız Olan Bölgeler</h2><p>Kartal'ın tüm mahallelerine ve çevre semtlere haftanın yedi günü eve servis.</p></div>
+  <div class="sec-head rv"><span class="eyebrow">Eve servis</span><h2>Paket Servis Verdiğimiz Mahalleler</h2><p>Kartal'ın şu <strong>11 mahallesine</strong> haftanın yedi günü paket servis yapıyoruz. Bu mahallelerin dışına servisimiz bulunmuyor.</p></div>
   <div class="areas rv">{areas}</div>
-  <p style="margin-top:18px;color:var(--ink-2)">Mahalleniz listede yok mu? <a href="{wa('Merhaba, adresime eve servis var mı? Adres: ')}" rel="noopener">WhatsApp'tan sorun</a>, hemen söyleyelim.</p>
+  <p style="margin-top:18px;color:var(--ink-2)">Mahalleniz listede yoksa paket servis yapamıyoruz; dükkânımızdan gel-al olarak alabilirsiniz. Adresiniz sınırda ise <a href="{wa('Merhaba, adresime paket servis var mı? Adres: ')}" rel="noopener">WhatsApp'tan sorun</a>.</p>
  </div>
 </section>
 
@@ -765,20 +760,20 @@ def build_urunler():
 # ─────────────────────────────── BÖLGELER ───────────────────────────────
 def build_bolgeler():
     title = "Eve Servis Bölgeleri | Kartal Tekel Bayi | Marin Tekel 2"
-    desc = "Kartal tekel bayi eve servis bölgeleri: Karlıktepe, Kordonboyu, Yukarı, Orta, Hürriyet, Soğanlık, Cevizli, Yakacık, Dragos ve çevresi. Mahalle mahalle süreler."
-    rows = "".join(f'<tr><td><a href="/bolge/{b[0]}.html">{esc(b[1])} Tekel Bayi</a></td><td>{b[5]}</td><td>{esc(b[3])}</td></tr>' for b in BOLGELER)
+    desc = "Paket servis verdiğimiz 11 mahalle: Karlıktepe, Esentepe, Petrol-İş, Yukarı Mahalle, Kordonboyu, Atalar, Rahmanlar, Çavuşoğlu, Cevizli, Orhantepe, Soğanlık."
+    rows = "".join(f'<tr><td><a href="/bolge/{b[0]}.html">{esc(b[1])} Tekel Bayi</a></td><td>{esc(b[2])}</td></tr>' for b in BOLGELER)
     schemas=[breadcrumb([("/","Ana Sayfa"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri")]),{"@context":"https://schema.org","@type":"ItemList","name":"Marin teslimat bölgeleri","itemListElement":[{"@type":"ListItem","position":i+1,"name":b[1],"url":C["domain"]+f"/bolge/{b[0]}.html"} for i,b in enumerate(BOLGELER)]}]
-    body = page_head("Eve Servis İmkanımız Olan Bölgeler", f"Kartal'ın tüm mahallelerine ve çevre semtlere haftanın yedi günü eve servis.", [("/","Ana Sayfa"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri")]) + f"""
+    body = page_head("Paket Servis Verdiğimiz Mahalleler", f"Kartal'ın şu 11 mahallesine haftanın yedi günü paket servis yapıyoruz. Bu mahallelerin dışına servisimiz bulunmuyor.", [("/","Ana Sayfa"),("/teslimat-bolgeleri.html","Teslimat Bölgeleri")]) + f"""
 <section><div class="wrap">
-<div class="prose" style="max-width:100%"><div style="overflow-x:auto"><table><thead><tr><th>Mahalle</th><th>İlçe</th><th>Yakın noktalar</th></tr></thead><tbody>{rows}</tbody></table></div></div>
-<p style="color:var(--ink-2)">Adresiniz listede yoksa da yazın; Kartal sınırına yakın Maltepe ve Pendik adreslerine çoğu zaman gidebiliyoruz.</p>
+<div class="prose" style="max-width:100%"><div style="overflow-x:auto"><table><thead><tr><th>Mahalle</th><th>Yakın noktalar</th></tr></thead><tbody>{rows}</tbody></table></div></div>
+<div class="card" style="border-left:6px solid var(--amber);margin-top:20px"><h3 style="margin-bottom:.3em">Servis sınırımız</h3><p style="margin:0;color:var(--ink-2)">Yukarıdaki 11 mahalle dışına paket servis yapmıyoruz. Diğer adreslerden gel-al olarak dükkânımızdan alabilirsiniz: Karlıktepe, İnönü Cd. No:75. Adresiniz sınırda ise <a href="{wa('Merhaba, adresime paket servis var mı? Adres: ')}" rel="noopener">WhatsApp'tan sorun</a>.</p></div>
 </div></section>
 {cta_band()}
 """
     write("/teslimat-bolgeleri.html", head(title, desc, "/teslimat-bolgeleri.html", schemas) + body + foot())
 
 def build_bolge(b):
-    s,name,eta,near,note,ilce = b
+    s,name,near,note,ilce = b
     path = f"/bolge/{s}.html"
     title = f"{name.split(' (')[0].replace(' Mahallesi','').replace('Yakacık Yeni Mahalle','Yakacık Yeni')} Tekel Bayi | Eve Servis | Marin Kartal"
     desc = f"{name.split(' (')[0]} tekel bayi: {ilce} {name.split(' (')[0]} bölgesine eve servis. Her gün gece 02:00'ye kadar açık, fiyat farkı yok. {C['phone_display']}"
@@ -814,7 +809,7 @@ def build_bolge(b):
   </ol>
   <h2>{name}'de en çok ne isteniyor?</h2>
   <p>Akşam saatlerinde torba buz ve soğuk meşrubat; gece yarısından sonra kuruyemiş, cips ve çikolata; sabahları ekmek, süt ve yumurta. Hepsi dükkândaki fiyatla.</p>
-  <h2>Yakın bölgeler</h2>
+  <h2>Paket servis verdiğimiz diğer mahalleler</h2>
   <div class="areas">{''.join(f'<a href="/bolge/{o[0]}.html">{esc(o[1])} Tekel Bayi</a>' for o in others)}</div>
  </div>
  <aside class="side"><div class="card">
@@ -837,7 +832,7 @@ def build_kartal_tekel():
     qs = [
       ("Kartal'da gece açık tekel var mı?", f"Evet. {C['brand']} her gün {C['closes']}'ye kadar açık. Karlıktepe İnönü Caddesi No:75'teyiz; gece 02:00'ye kadar eve servis devam eder."),
       ("Kartal'da 24 saat açık tekel var mı?", "Kartal'da 7/24 açık tekel yok. Biz her gün gece 02:00'ye kadar açığız; Kartal'ın en geç kapanan tekel bayilerinden biriyiz."),
-      ("Kartal'da en yakın tekel nerede?", "Karlıktepe'deyseniz İnönü Caddesi No:75. Kartal merkez, Kordonboyu sahil, Yukarı ve Orta Mahalle'den 5–10 dakika; Soğanlık metro ve Hürriyet'ten 10–15 dakika."),
+      ("Kartal'da en yakın tekel nerede?", "Karlıktepe'deyseniz İnönü Caddesi No:75. Kartal merkez, Yukarı Mahalle ve Petrol-İş'ten 3–7 dakika; Kordonboyu sahil, Esentepe ve Soğanlık metrodan 8–12 dakika."),
       ("Kartal tekel telefon numarası nedir?", f"{C['phone_display']}. Aynı numara WhatsApp'tır; sipariş için arayabilir ya da yazabilirsiniz."),
       ("Tekelden eve sipariş verebilir miyim?", "Evet. Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünleri için bir telefon ya da WhatsApp mesajı yeterli. Fiyat farkı yok, kapıda kart ya da nakit."),
       ("Kartal sahilden tekele nasıl giderim?", "Kordonboyu'ndan İnönü Caddesi'ne kuzeye çıkın; yürüyerek 10–12 dakika, araçla 4–5 dakika. Yol tarifi için Google Haritalar linkine tıklayın."),
@@ -862,8 +857,8 @@ def build_kartal_tekel():
   <h2>Kartal açık tekel market: dükkânda ne var?</h2>
   <p>Geniş soğuk içecek dolabı, her saat torba buz, soda-tonik-gazoz ve meşrubatlar, soğuk meze ve kuruyemiş rafı, çikolata, dondurma, su ve süt ürünleri, temel gıda, kişisel bakım ve temizlik.</p>
   <h2>Eve servis</h2>
-  <p>Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünleri Kartal'ın her mahallesine, fiyat farkı olmadan. <a href="tel:{C['phone_e164']}">Arayın</a> ya da <a href="{WA_DEFAULT}" rel="noopener">WhatsApp'tan yazın</a>.</p>
-  <h2>Eve servis imkanımız olan bölgeler</h2>
+  <p>Buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünleri aşağıdaki 11 mahalleye, fiyat farkı olmadan. <a href="tel:{C['phone_e164']}">Arayın</a> ya da <a href="{WA_DEFAULT}" rel="noopener">WhatsApp'tan yazın</a>.</p>
+  <h2>Paket servis verdiğimiz mahalleler</h2>
   <div class="areas">{mahalle_links}</div>
  </div>
  <aside class="side"><div class="card">
@@ -942,7 +937,7 @@ def build_blog():
     posts = "".join(f'<a class="post rv" href="/blog/{p["slug"]}.html"><time datetime="{p["date"]}">{tr_date(p["date"])}</time><h3>{esc(p["title"])}</h3><p>{esc(p["desc"])}</p></a>' for p in BLOG)
     body = page_head("Blog", "Kartal'da yaşayanlar için kısa, işe yarar yazılar.", [("/","Ana Sayfa"),("/blog/","Blog")]) + f'<section><div class="wrap"><div class="posts">{posts}</div></div></section>' + cta_band()
     write("/blog/index.html", head(title, desc, "/blog/", schemas) + body + foot())
-    tablo = '<table><thead><tr><th>Mahalle</th><th>Süre</th></tr></thead><tbody>' + "".join(f'<tr><td><a href="/bolge/{b[0]}.html">{esc(b[1])}</a></td><td>{b[2]}</td></tr>' for b in BOLGELER) + '</tbody></table>'
+    tablo = '<ul>' + "".join(f'<li><a href="/bolge/{b[0]}.html">{esc(b[1])} Tekel Bayi</a></li>' for b in BOLGELER) + '</ul>'
     for p in BLOG:
         path = f"/blog/{p['slug']}.html"
         content = p["body"] % {"tel":C["phone_e164"],"phone":C["phone_display"],"eta":C["eta"],"wa":WA_DEFAULT,"tablo":tablo}
@@ -962,6 +957,11 @@ def tr_date(iso):
     ay = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"][int(m)-1]
     return f"{int(d)} {ay} {y}"
 
+# ───────────── Kaldırılan bölge sayfaları (yönlendirme) ─────────────
+def build_eski_bolgeler():
+    for slug_eski in ESKI_BOLGELER:
+        write(f"/bolge/{slug_eski}.html", f'<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><link rel="canonical" href="{C["domain"]}/teslimat-bolgeleri.html"><meta http-equiv="refresh" content="0;url=/teslimat-bolgeleri.html"><title>Paket servis mahalleleri | {esc(C["brand"])}</title></head><body><p>Bu mahalleye paket servis yapmıyoruz. <a href="/teslimat-bolgeleri.html">Paket servis verdiğimiz mahalleler</a> &middot; <a href="/">Ana sayfa</a></p></body></html>')
+
 # ─────────────────────────────── 404 ───────────────────────────────
 def build_404():
     body = page_head("Sayfa bulunamadı", "Aradığınız sayfa taşınmış ya da hiç olmamış olabilir. Ama sipariş hattı her zaman açık.", [("/","Ana Sayfa"),("/404.html","404")]) + f"""
@@ -978,7 +978,7 @@ def build_tech():
     write("/robots.txt", f"User-agent: *\nAllow: /\n\n# AI arama botları açıkça izinli (AI SEO / GEO)\nUser-agent: GPTBot\nAllow: /\nUser-agent: ChatGPT-User\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: Claude-SearchBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\nUser-agent: Applebot-Extended\nAllow: /\nUser-agent: Bingbot\nAllow: /\n\nSitemap: {C['domain']}/sitemap.xml\n")
     llms = f"""# {C['brand']} (tekelsiparis.com)
 
-> Kartal (İstanbul) Karlıktepe'de her gün gece 02:00'ye kadar açık tekel bayi ve market. Kartal'ın tüm mahallelerine ve Maltepe–Pendik sınırına kendi kuryesiyle buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünlerini eve servis eder; fiyat farkı yok. Sipariş telefon veya WhatsApp ile verilir: {C['phone_intl']}.
+> Kartal (İstanbul) Karlıktepe'de her gün gece 02:00'ye kadar açık tekel bayi ve market. Kartal'ın 11 mahallesine (Karlıktepe, Esentepe, Petrol-İş, Yukarı Mahalle, Kordonboyu, Atalar, Rahmanlar, Çavuşoğlu, Cevizli, Orhantepe, Soğanlık) kendi kuryesiyle buz, içecek, meşrubat, soğuk meze, kuruyemiş ve market ürünlerini paket servis eder; fiyat farkı yok. Bu mahallelerin dışına paket servis yapılmaz, diğer adresler dükkândan gel-al alabilir. Sipariş telefon veya WhatsApp ile verilir: {C['phone_intl']}.
 
 ## Temel bilgiler
 
@@ -993,14 +993,14 @@ def build_tech():
 - Ödeme: Kapıda nakit veya kart (POS)
 - Eve servis ürünleri: Buz, içecekler, meşrubatlar (kola, gazoz, soda, tonik), soğuk meze çeşitleri, kuruyemiş, su ve süt ürünleri, çikolata, dondurma, temel gıda, temizlik ve kişisel bakım, bebek bezi, çakmak, pil
 
-## Teslimat bölgeleri
-{chr(10).join(f"- [{b[1]} Tekel Bayi]({C['domain']}/bolge/{b[0]}.html): {b[5]}, {b[3]}" for b in BOLGELER)}
+## Paket servis verilen mahalleler (bu liste dışına servis yoktur)
+{chr(10).join(f"- [{b[1]} Tekel Bayi]({C['domain']}/bolge/{b[0]}.html): {b[2]}" for b in BOLGELER)}
 
 ## Sayfalar
 - [Ana sayfa]({C['domain']}/): Kartal tekel bayi, eve servis, fiyat farkı yok
 - [Kartal Tekel Bayi]({C['domain']}/kartal-tekel.html): Adres, saat, telefon, yol tarifi; "kartal tekel", "gece açık tekel", "en yakın tekel" sorularının cevabı
 - [Ürünler]({C['domain']}/urunler.html): Su, buz, içecek, atıştırmalık, temel gıda, temizlik
-- [Eve servis bölgeleri]({C['domain']}/teslimat-bolgeleri.html): Kartal mahalleleri ve tahmini süreler
+- [Paket servis mahalleleri]({C['domain']}/teslimat-bolgeleri.html): Servis verilen 11 Kartal mahallesi
 - [SSS]({C['domain']}/sss.html): Teslimat süresi, fiyat, saat, ödeme
 - [Hakkımızda]({C['domain']}/hakkimizda.html): Kartal Karlıktepe tekel bayi
 - [İletişim]({C['domain']}/iletisim.html): {C['phone_display']}, adres, harita
@@ -1076,6 +1076,6 @@ if __name__ == "__main__":
     build_tech(); build_photos(); build_images()
     build_index(); build_kartal_tekel(); build_siparis(); build_urunler(); build_bolgeler()
     for b in BOLGELER: build_bolge(b)
-    build_sss(); build_hakkimizda(); build_iletisim(); build_blog(); build_404()
+    build_sss(); build_hakkimizda(); build_iletisim(); build_blog(); build_404(); build_eski_bolgeler()
     n = sum(len(f) for _,_,f in os.walk(OUT))
     print(f"✓ {n} dosya üretildi → {OUT}")
